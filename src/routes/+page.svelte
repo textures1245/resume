@@ -1,5 +1,5 @@
-<!-- <script style="ts">
-    import { aboutMe } from "../data";
+<script style="ts">
+	import App from '$lib/components/App.svelte';
 </script>
 
-{aboutMe.fullName} -->
+<App />

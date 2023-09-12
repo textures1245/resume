@@ -1,6 +1,7 @@
 import { Project, Certificate, Interest, Language } from '$lib/builders';
+import type { AboutMe } from '$lib/types';
 
-const aboutMe = {
+const aboutMe: AboutMe = {
 	fullName: 'Traiphakh Sittikaew',
 	nickname: 'Phakh',
 	phone: '0654209589',
@@ -56,7 +57,7 @@ const technologies = [
 	{
 		section: 'Tools',
 		details:
-			'Git, Docker, Kubernetes, Zsh, GitHub Codespaces, Prisma, MySQL, MongoDB, PostgreSQL, Figma.'
+			'Git, Docker, Kubernetes, Zsh, GitHub Codespaces, Prisma, MySQL, MongoDB, PostgreSQL, Eslint,  Figma.'
 	},
 	{
 		section: 'Libraries/Plugins',
@@ -73,7 +74,7 @@ const education = {
 	degree: 'Bachelor of Science',
 	major: 'Computer Science',
 	university: 'Maejo University',
-	graduationDetail: 'GPA: 3.63 (Currently on 4th term), Expected graduation: 2025)'
+	graduationDetail: 'GPA: 3.63 (Currently on 4th term), expected graduation: 2025)'
 };
 
 const projects = [
@@ -113,15 +114,26 @@ const projects = [
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase Realtime Database',
 		'https://wishlist-management-app.web.app/'
+	),
+	new Project(
+		'Portfolio (old school ver.)',
+		'Portfolio that I made during my second year as a student, using only SCSS, writing the style all by myself.',
+		'SCSS',
+		false,
+		'SCSS',
+		'https://portfolio-static-website.vercel.app/'
 	)
 ];
 
 const interests = [
-	new Interest('Productivity Improvement', 'Coding, Productivity & Life-hacks, Reading'),
-	new Interest('Running', 'Run 5KM 5 days per week, My longest run is 11KM'),
+	new Interest(
+		'Potential Development',
+		'Coding, Always find new tools to handle and reduce my tasks, Productivity & Life-hacks, Reading'
+	),
+	new Interest('Running', 'Run 5KM 5 days per week, My longest run distance is 11KM'),
 	new Interest(
 		'Music',
-		"I'm a music lover. When I have free time, I usually play the guitar or listen to music."
+		"I'm a music lover. When I have free time, I usually play the guitar or listen to music. "
 	),
 	new Interest(
 		'Pets',
@@ -133,7 +145,7 @@ const langs = [
 	new Language('Thai', 'Native'),
 	new Language(
 		'English',
-		'Conversational',
+		'Strong',
 		'I have a proficient reading and listening comprehension, and I can speak smoothly with an almost fluent accent. My writing skills are intermediate.'
 	)
 ];

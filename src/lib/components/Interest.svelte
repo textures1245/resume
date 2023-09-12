@@ -1,59 +1,33 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import type { Interest, Project } from '$lib/types';
+	import { slide } from 'svelte/transition';
+	import HidableProp from './HidableProp.svelte';
+
+	export let data: Interest[];
+</script>
+
+{#each data as p}
+	<HidableProp>
+		<div class="">
+			<ul class="list-disc list-inside">
+				<li class="font-extrabold">
+					{p.groupName} - <span>{p.details}</span>
+				</li>
+			</ul>
+		</div>
+	</HidableProp>
+{/each}
 
 <style lang="postcss">
-	main {
-		overflow-x: hidden;
+	ul li {
+		@apply ml-2 md:ml-6;
 	}
 
 	a {
 		text-decoration: underline;
 	}
 
-	section {
-		@apply my-4;
-	}
-
-	section h2 {
-		@apply font-semibold;
-	}
-
-	section hr {
-		@apply mt-0 mb-2;
-		border-color: darkgrey;
-	}
-
-	:global(.print-only) {
-		display: none;
-	}
-
-	@media print {
-		* {
-			@apply text-xs;
-		}
-
-		:global(.print-only) {
-			display: inherit;
-		}
-
-		:global(.web-only) {
-			display: none;
-		}
-
-		ul {
-			@apply pl-6;
-		}
-
-		section {
-			@apply my-2;
-		}
-
-		section hr {
-			@apply mt-0 mb-1;
-		}
-
-		main {
-			margin: 0 0;
-			padding: 0;
-		}
+	h3 {
+		@apply font-bold;
 	}
 </style>
