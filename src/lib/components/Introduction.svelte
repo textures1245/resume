@@ -26,7 +26,7 @@
 <div class="flex flex-col items-end">
 	<a href={data.github.url} target="_blank" rel="noreferrer">github.com/{data.github.label}</a>
 	<a href={data.linkedin.url} target="_blank" rel="noreferrer">LinkedIn</a>
-	<a href="#" target="_blank" rel="noreferrer">phakh.is.a.dev{data.website}</a>
+	<a href={data.website} target="_blank" rel="noreferrer">textures1245.is.a.dev{data.website}</a>
 </div>
 
 <style lang="postcss">

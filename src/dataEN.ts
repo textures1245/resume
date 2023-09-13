@@ -8,14 +8,14 @@ const aboutMe: AboutMe = {
 	email: 'sirprak1245@gmail.com',
 	github: {
 		label: 'textures1245',
-		url: ''
+		url: 'https://github.com/textures1245'
 	},
 	linkedin: {
 		label: 'textures1245',
-		url: ''
+		url: 'https://www.linkedin.com/in/traiphakh-sittikaew-b32ba8290/'
 	},
 	location: 'Chiang Mai, Thailand',
-	website: ''
+	website: 'https://resume-gamma-topaz.vercel.app/'
 };
 
 const objective =
