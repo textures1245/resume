@@ -10,8 +10,8 @@
 	<HidableProp>
 		<div class="">
 			<ul class="list-disc list-inside">
-				<li class="font-extrabold">
-					{p.groupName} - <span>{p.details}</span>
+				<li>
+					<span class="font-extrabold">{p.groupName}</span> - <span>{p.details}</span>
 				</li>
 			</ul>
 		</div>

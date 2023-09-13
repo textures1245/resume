@@ -22,7 +22,7 @@ const objective =
 	'I am actively pursuing a software engineering internship to leverage my technical skills and contribute to cutting-edge projects while expanding my knowledge in the field. As a dedicated computer science student with a solid foundation, I am excited to apply my proficiency in programming languages. My experience with essential development tools and databases positions me to make valuable contributions to your team. I am enthusiastic about working collaboratively and continuously enhancing my abilities. Joining your organization would provide me with an excellent platform to further develop as a software engineer and contribute to your innovative initiatives.';
 
 const summary =
-	'I am an enthusiastic with a passion for web development and a strong technical foundation. I am proficient in a wide range of programming languages and frameworks, including JavaScript, TypeScript, Angular, VueJS, and more. I am skilled in using essential tools like Git, Docker, and databases such as MySQL, MongoDB, and PostgreSQL. I am committed to delivering high-quality software solutions and eager to apply my classroom knowledge to real-world projects. I am adept at collaborating with teams and open to continuous learning. I am seeking a software engineering internship to gain hands-on experience and contribute to innovative development projects.';
+	"I am zealous. Passion and commitment to web development and a strong technical skill base. I am proficient in using various programming languages and tools and covering work in various fields. Also, my teamwork is very skilled. I am usually the team leader who consults and then comes to a conclusion on working together. Because I believe that working as a team should have clear goals and objectives. Including communication respecting the reasons of the team members and being open to continuous learning. Moreover, I am also a good counselor and teacher. From the fact that I have been a mentor to countless juniors and am also the head of TA (Team Assistant) who often helps juniors or Participants in the CompCamp project, which is the branch's technology and computer tutoring camp. I am committed and sincerely hope to apply the knowledge learned to actual projects to gain practical experience and participate in innovation development projects.";
 
 const certificates = [
 	new Certificate(
@@ -80,14 +80,14 @@ const education = {
 const projects = [
 	new Project(
 		'Homework Management',
-		'Manageable assignments and instructors tag along with due dates. Support group assignments. ',
+		'Task management that can be grouped and identified by teachers along with the date of submission of work. Supports the CURD system for both single tasks and group missions.',
 		'TypeScript via Angular for frontend framework and NgRx for state management, styling with CSS and TailwindCSS. Backend connecting with Node.js via ExpressJS. MySQL for database.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL'
 	),
 	new Project(
 		'Booking Best',
-		'Hotel booking with hotel review board sharing community. Real-time user locate detection via show nearby hotel. ',
+		"Hotel reservations with hotel review boards shared in the community Check the user's real-time location to show nearby hotels. Supports user-based and CURD systems for hotel reviews shared on community boards.",
 		'TypeScript via VueJS for frontend framework and Pinia for state management, styling with SCSS and TailwindCSS. Using Firebase backend connection.',
 		false,
 		'TypeScript (VueJS, Pinia), SCSS, TailwindCSS, Firebase',
@@ -95,28 +95,28 @@ const projects = [
 	),
 	new Project(
 		'Blocktify (Frontend Contributed)',
-		'Minecraft workshop client with fully support website UI config modification.',
+		'Minecraft Workshop Client with fully customized web interface and actions. This ranges from diverse and dynamic UI customization (menus, backgrounds, layouts, widgets, boards, etc.), product CURD system, top-up management. and user and customization management, including an integrated Backend API with the web app.',
 		'TypeScript via VueJS for frontend framework and Zod for type validation styling with SCSS and TailwindCSS. Firebase backend connection.',
 		false,
 		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase'
 	),
 	new Project(
 		'PhakhCampground',
-		'Campgrounds rental website, fully supporting both viewers and owners. ',
+		'A full-service campground rental website. It has a certified map display and CURD system of the camp that comes with variety and convenience such as automatic latitude and longitude determination and others. Supports multimedia data collection. and reservation system. It also supports the CURD system for comments that users can enter to give reviews.',
 		'My first project, using plain EJS for HTML template, styling with CSS and Bootstrap. Node.js via ExpressJS for backend connection, MongoDB for database.',
 		false,
 		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB'
 	),
 	new Project(
 		'Wishlist Management',
-		'Manageable wishlists',
+		'A website that can manage wish lists, supports CURD system.',
 		'TypeScript via Angular for frontend framework and NgRx for state management, styling with CSS and TailwindCSS. Using Firebase real-time database.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase Realtime Database',
 		'https://wishlist-management-app.web.app/'
 	),
 	new Project(
-		'Portfolio (old school ver.)',
+		'Portfolio (Standalone)',
 		'Portfolio that I made during my second year as a student, using only SCSS, writing the style all by myself.',
 		'SCSS',
 		false,

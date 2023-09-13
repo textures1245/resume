@@ -19,7 +19,7 @@
 	});
 </script>
 
-<div class:eng-font={$langSelected === 'ENG'} class:thai-font={$langSelected === 'TH'}>
+<div class="mb-5" class:eng-font={$langSelected === 'ENG'} class:thai-font={$langSelected === 'TH'}>
 	<header class="web-only">
 		<div class="px-10 theme grid place-items-center text-center space-y-4 py-8 text-white">
 			<section class="container mx-auto">
@@ -52,7 +52,7 @@
 		</div>
 	</header>
 
-	<main class="container my-10 print:m-0 mx-auto">
+	<main class="container my-5 print:m-1 mx-auto">
 		<section
 			class:print:grid-cols-3={introColumnGridSetter}
 			id="introduction"
@@ -87,7 +87,8 @@
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
 						<li>
-							<span>{data.education.degree}, {data.education.major}</span> at
+							<span>{data.education.degree}, {data.education.major}</span>
+							{$langSelected == 'ENG' ? 'at' : 'ที่'}
 							<span>{data.education.university}</span>
 						</li>
 						<li>{data.education.graduationDetail}</li>
@@ -145,7 +146,7 @@
 						{#each data.certificates as cert}
 							<HidableProp>
 								<li>
-									<span class=" !font-[900]">{cert.title}</span> 
+									<span class=" !font-[900]">{cert.title}</span>
 									<span>( {cert.details} )</span>
 								</li>
 							</HidableProp>
@@ -174,12 +175,27 @@
 			</section>
 		</HidableProp>
 	</main>
-	<footer class="print-only text-center">
-		(See <a href={'#'} target="_blank" rel="noopener">full version</a>
-		or <a href={'#'} target="_blank" rel="noopener">source</a>)
-		<p>
-			(You can see more projects that I had done on my <a href={data.aboutMe.github.url}>Github</a>)
-		</p>
+	<footer class="web-only text-center">
+		<hr />
+		{#if $langSelected === 'ENG'}
+			<!-- content here -->
+			(See <a href={'#'} target="_blank" rel="noopener">full version</a>
+			or <a href={'#'} target="_blank" rel="noopener">source</a>)
+			<p>
+				(You can see more projects that I had done on my <a href={data.aboutMe.github.url}>Github</a
+				>)
+			</p>
+		{:else}
+			(สามารถดู <a href={'#'} target="_blank" rel="noopener">เวอร์ชั้นเต็มได้ที่นี้</a>
+			หรือ
+			<a href={'https://github.com/textures1245/resume'} target="_blank" rel="noopener">ซอสโค๊ด</a>)
+			<p>
+				(คุณสามารถดูโปรเจคอื่น ๆและความคืยหน้าของข้าพระเจ้าได้ที่<a href={data.aboutMe.github.url}
+					>Github</a
+				>)
+			</p>
+		{/if}
+		<section />
 	</footer>
 </div>
 
@@ -244,6 +260,10 @@
 		border-color: darkgrey;
 	}
 
+	footer hr {
+		@apply my-4
+	}
+
 	:global(.print-only) {
 		display: none;
 	}
@@ -266,11 +286,11 @@
 		}
 
 		section {
-			@apply my-2;
+			@apply -my-1;
 		}
 
 		section div hr {
-			@apply -mt-2 mb-1;
+			@apply -mt-3 mb-1;
 		}
 
 		main {

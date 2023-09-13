@@ -2,15 +2,12 @@
 	import type { AboutMe } from '$lib/types';
 	export let isColumnGrid: boolean;
 	export let data: AboutMe;
+	import myPic from '$lib/assets/phakh.jpeg';
 </script>
 
 <div class:print:col-span-1={isColumnGrid} class="col-span-full space-y-2 md:col-span-1">
 	<figure class="flex justify-center">
-		<img
-			class="print:w-44 w-80"
-			src="https://cdn.pixabay.com/photo/2017/08/21/23/31/labrador-2667328_640.jpg"
-			alt="phakh_pic"
-		/>
+		<img class="print:w-24 w-48" src={myPic} alt="phakh_pic" />
 	</figure>
 
 	<div class:print:hidden={isColumnGrid} class="text-center block md:hidden">
