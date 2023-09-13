@@ -13,7 +13,7 @@
 				<ul class="list-disc list-inside">
 					<li>
 						<span class="font-extrabold">{p.name}</span> - <span>{p.details}</span>
-						<a rel="noreferrer" target="_blank" href={p.url ?? '#'}>{p.url?.slice(8) ?? '#'}</a>
+						<a rel="noreferrer" target="_blank" href={p.url ?? '#'}>{p.url?.slice(8) ?? ''}</a>
 					</li>
 				</ul>
 			</div>
