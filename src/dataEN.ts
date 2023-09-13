@@ -83,7 +83,8 @@ const projects = [
 		'Task management that can be grouped and identified by teachers along with the date of submission of work. Supports the CURD system for both single tasks and group missions.',
 		'TypeScript via Angular for frontend framework and NgRx for state management, styling with CSS and TailwindCSS. Backend connecting with Node.js via ExpressJS. MySQL for database.',
 		false,
-		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL'
+		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL',
+		'https://github.com/textures1245/homework-management'
 	),
 	new Project(
 		'Booking Best',
@@ -91,6 +92,7 @@ const projects = [
 		'TypeScript via VueJS for frontend framework and Pinia for state management, styling with SCSS and TailwindCSS. Using Firebase backend connection.',
 		false,
 		'TypeScript (VueJS, Pinia), SCSS, TailwindCSS, Firebase',
+		'https://github.com/textures1245/BookingBest-HotelApplication',
 		'https://booking-best-hotel-application.vercel.app/'
 	),
 	new Project(
@@ -98,14 +100,16 @@ const projects = [
 		'Minecraft Workshop Client with fully customized web interface and actions. This ranges from diverse and dynamic UI customization (menus, backgrounds, layouts, widgets, boards, etc.), product CURD system, top-up management. and user and customization management, including an integrated Backend API with the web app.',
 		'TypeScript via VueJS for frontend framework and Zod for type validation styling with SCSS and TailwindCSS. Firebase backend connection.',
 		false,
-		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase'
+		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase',
+		'https://github.com/textures1245/blocktify-template-webshop-builder'
 	),
 	new Project(
 		'PhakhCampground',
 		'A full-service campground rental website. It has a certified map display and CURD system of the camp that comes with variety and convenience such as automatic latitude and longitude determination and others. Supports multimedia data collection. and reservation system. It also supports the CURD system for comments that users can enter to give reviews.',
 		'My first project, using plain EJS for HTML template, styling with CSS and Bootstrap. Node.js via ExpressJS for backend connection, MongoDB for database.',
 		false,
-		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB'
+		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB',
+		'https://github.com/textures1245/PhakhCampgrounds'
 	),
 	new Project(
 		'Wishlist Management',
@@ -113,6 +117,7 @@ const projects = [
 		'TypeScript via Angular for frontend framework and NgRx for state management, styling with CSS and TailwindCSS. Using Firebase real-time database.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase Realtime Database',
+		'https://github.com/textures1245/wishlist-app',
 		'https://wishlist-management-app.web.app/'
 	),
 	new Project(
@@ -121,6 +126,7 @@ const projects = [
 		'SCSS',
 		false,
 		'SCSS',
+		'https://github.com/textures1245/portfolio-static-website',
 		'https://portfolio-static-website.vercel.app/'
 	)
 ];

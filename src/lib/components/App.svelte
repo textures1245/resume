@@ -190,7 +190,7 @@
 			หรือ
 			<a href={'https://github.com/textures1245/resume'} target="_blank" rel="noopener">ซอสโค๊ด</a>)
 			<p>
-				(คุณสามารถดูโปรเจคอื่น ๆและความคืยหน้าของข้าพระเจ้าได้ที่<a href={data.aboutMe.github.url}
+				(คุณสามารถดูโปรเจคอื่น ๆและความคืบหน้าของข้าพระเจ้าได้ที่<a href={data.aboutMe.github.url}
 					>Github</a
 				>)
 			</p>

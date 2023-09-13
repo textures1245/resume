@@ -5,6 +5,7 @@ class Project {
 		public procedure: string,
 		public onHide: false,
 		public techStack: string,
+		public sourceCode: string,
 		public url?: string
 	) {}
 }

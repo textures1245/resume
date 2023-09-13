@@ -84,7 +84,8 @@ const projects = [
 		'การจัดการงานภารกิจที่สามารถจัดกลุ่มและระบุอาจารย์พร้อมกับวันที่ส่งงาน. รองรับระบบ CURD ทั้งงานเดียวและงานภารกิจแบบกลุ่ม.',
 		'TypeScript ผ่าน Angular เป็นกรอบการทำงานด้านหน้าและ NgRx สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย CSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Node.js ผ่าน ExpressJS. MySQL สำหรับฐานข้อมูล.',
 		false,
-		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL'
+		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL',
+		'https://github.com/textures1245/homework-management'
 	),
 	new Project(
 		'Booking Best',
@@ -92,6 +93,7 @@ const projects = [
 		'TypeScript ผ่าน VueJS สำหรับกรอบการทำงานด้านหน้าและ Pinia สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย SCSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Firebase.',
 		false,
 		'TypeScript (VueJS, Pinia), SCSS, TailwindCSS, Firebase',
+		'https://github.com/textures1245/BookingBest-HotelApplication',
 		'https://booking-best-hotel-application.vercel.app/'
 	),
 	new Project(
@@ -99,14 +101,16 @@ const projects = [
 		'ไคลเอ็นต์เวิร์กชอป Minecraft พร้อมกับการปรับแต่งอินเตอร์เฟซเว็บและแอคชั่นที่สมบูรณ์แบบ โดยมีตั้งแต่การปรับแต่ง UI ที่มีความหลากหลายและเป็นแบบไดนามิก (เมนู​, พื้นหลัง,เลย์เอาท์, วิดเจท, บอร์ด และอื่น ๆ) ระบบ CURD ของสินค้า การจัดการเติมเงิน และการจัดการส่วนของผู้ใช้และการตกแต่ง รวมถึงการ integrated Backend API รวมกับเว็บแอป',
 		'TypeScript ผ่าน VueJS สำหรับกรอบการทำงานด้านหน้าและ Zod สำหรับการตรวจสอบประเภท การจัดรูปแบบด้วย SCSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Firebase.',
 		false,
-		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase'
+		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase',
+		'https://github.com/textures1245/blocktify-template-webshop-builder'
 	),
 	new Project(
 		'PhakhCampground',
 		'เว็บไซต์ให้เช่าพื้นที่แคมป์ที่รองรับทั้งผู้เข้าชมและเจ้าของแคมป์ โดยมีการรับรองการแสดงแผนที่ และระบบ CURD ของแคมป์ที่มาความหลากหลายและความสะดวกสะบาย อาทิเช่น กำหนดละติจูดและลองติจูดแบบอัตโนมัติ และอื่น ๆ รอบรับการเก็บข้อมูลแบบมัลติมีเดีย และระบบการจองที่ อีกทั้งรอบรับระบบ CURD ของคอมเมนต์ที่ผู้ใช้สามารถเข้าไปให้รีวิวได้',
 		'โปรเจ็คแรกของข้าพระเจ้า ใช้ EJS ธรรมดาสำหรับเทมเพลต HTML, การจัดรูปแบบด้วย CSS และ Bootstrap. Node.js ผ่าน ExpressJS สำหรับการเชื่อมต่อกับเซิร์ฟเวอร์, MongoDB สำหรับฐานข้อมูล และ Clondinary สำหรับเก็บไฟล์ประมัลติมีเดีย',
 		false,
-		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB'
+		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB',
+		'https://github.com/textures1245/PhakhCampgrounds'
 	),
 	new Project(
 		'Wishlist Management',
@@ -114,6 +118,7 @@ const projects = [
 		'TypeScript ผ่าน Angular สำหรับกรอบการทำงานด้านหน้าและ NgRx สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย CSS และ TailwindCSS. ใช้ฐานข้อมูลแบบเรียลไทม์จาก Firebase.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase ฐานข้อมูลแบบเรียลไทม์',
+		'https://github.com/textures1245/wishlist-app',
 		'https://wishlist-management-app.web.app/'
 	),
 	new Project(
@@ -122,6 +127,7 @@ const projects = [
 		'SCSS',
 		false,
 		'SCSS',
+		'https://github.com/textures1245/portfolio-static-website',
 		'https://portfolio-static-website.vercel.app/'
 	)
 ];

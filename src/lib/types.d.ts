@@ -31,6 +31,7 @@ type Project = {
 	procedure: string;
 	onHide: false;
 	techStack: string;
+	sourceCode: string;
 	url?: string;
 };
 
