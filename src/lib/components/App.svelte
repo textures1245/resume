@@ -36,7 +36,7 @@
 					<p>[คุณยังสามารถเปลี่ยนทิศทางของตารางเป็นคอลัมน์/แถวได้ (เฉพาะการพิมพ์)]</p>
 				{/if}
 
-				<div class="flex justify-center gap-6">
+				<div class="flex justify-center items-center gap-6">
 					<button
 						on:click={() =>
 							$langSelected === 'ENG' ? langSelected.set('TH') : langSelected.set('ENG')}
