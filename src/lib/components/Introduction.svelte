@@ -38,10 +38,10 @@
 		text-underline-offset: 0.2rem;
 	}
 	h2 {
-		@apply font-bold print:text-lg  text-xl xl:text-3xl;
+		@apply font-bold print:text-[1.23rem]  text-xl xl:text-3xl;
 	}
 
 	h2 span {
-		@apply  print:text-xs print:inline-flex text-gray-600 text-base lg:text-lg;
+		@apply print:text-xs  text-gray-600 text-base lg:text-lg;
 	}
 </style>
