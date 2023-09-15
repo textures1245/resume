@@ -68,7 +68,7 @@
 				<div class="">
 					<h2>Objective</h2>
 					<hr />
-					<p class=" indent-4">{data.objective}</p>
+					<p class="thai-indent">{data.objective}</p>
 				</div>
 			</section>
 		</HidableProp>
@@ -77,7 +77,7 @@
 				<div class="">
 					<h2>Summary</h2>
 					<hr />
-					<p class="indent-4">{data.summary}</p>
+					<p class="thai-indent">{data.summary}</p>
 				</div>
 			</section>
 		</HidableProp>
@@ -89,11 +89,10 @@
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
 						<li>
-							<span>{data.education.degree}, {data.education.major}</span>
+							<b>{data.education.degree}, {data.education.major}</b>
 							{$langSelected == 'ENG' ? 'at' : 'ที่'}
-							<span>{data.education.university}</span>
+							<span>{data.education.university}</span> ({data.education.graduationDetail})
 						</li>
-						<li>{data.education.graduationDetail}</li>
 					</ul>
 				</div>
 			</section>
@@ -210,6 +209,10 @@
 	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai+Looped:wght@400&family=Noto+Serif+Thai:wght@400&display=swap');
 	.eng-font {
 		font-family: 'Kanit', sans-serif;
+	}
+
+	.thai-indent {
+		text-indent: 2rem;
 	}
 
 	.thai-font {
