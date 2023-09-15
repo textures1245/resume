@@ -19,11 +19,10 @@ const aboutMe: AboutMe = {
 };
 
 const objective =
-	'I am preparing to do cooperative education in software engineering. It was a great opportunity to apply my technological skills to a modern project. I am a computer student with knowledge and expertise in programming. Experience using development tools and databases. I am ready to contribute to the team and be part of exciting innovative projects. Joining this organization will help in my development as a software engineer and contribute to continuous innovation projects and grow my abilities moving forward.';
+	'My name is Traiphakh Sittikaew, a 4th year student in Computer Science. Maejo University is preparing to conduct cooperative education in software development. This is a good opportunity to apply programming skills and apply the various tools learned to real work. I am excited and ready to be a part of developing various projects with the organization. and develop yourself until you step into being a full-fledged software developer in the future';
 
 const summary =
-	"I am a person with a passion for web development and basic technical skills. I am proficient in using programming languages and tools. and covers work in various fields They also have the ability to work well as a team. I like to give advice and summarize the group's operations. I believe in clarity of goals and objectives. And I respect team members' reasons and are an important force in communication. I am also a mentor and teaching assistant for many juniors and am responsible for the head of TA (Team Assistant) role in the CompCamp project. I am committed to applying my knowledge in real projects to gain experience and participation in full innovation development.";
-
+	"I have a passion for web development and basic technical skills. and are proficient in using programming languages and tools Including covering technical design patterns such as OOP and MVC and having the ability to work well as a team. Because I believe in clarity of goals and objectives. Therefore, I always give advice and summarize the operations of the group. And I respect team members' reasons and they are an important force in communication. I am also a mentor and teaching assistant for many juniors and am responsible for the TA (Team Assistant) role in the CompCamp project. I am committed to using my knowledge in real projects to gain experience and contribute. Participate in the full development of the organization.";
 const certificates = [
 	new Certificate(
 		'Udemy: The Complete 2020 Web Development Bootcamp.',
@@ -39,7 +38,7 @@ const certificates = [
 	),
 	new Certificate(
 		'Unity: Unity Certified Programmer Exam Preparation Course.',
-		'Unity Programmer Exam with C# language  (10 hours)'
+		'Unity Programmer Exam with C# language.  (10 hours)'
 	),
 	new Certificate('CSCMU Coding Challenge 2023', 'Contestant for CSCMU Coding Challenge 2023')
 ];
@@ -68,12 +67,22 @@ const technologies = [
 	}
 ];
 
-const education = {
-	degree: 'Bachelor of Science',
-	major: 'Computer Science',
-	university: 'Maejo University',
-	graduationDetail: 'GPA: 3.63 (Currently on 4th term), expected graduation: 2025)'
-};
+const education = [
+	{
+		degree: 'Science',
+		major: 'Science-Mathematics',
+		university: 'San Sai Wittayakom School',
+		gpax: '3.72',
+		graduationDetail: 'Graduated in 2020.'
+	},
+	{
+		degree: 'Bachelor of Science',
+		major: 'Computer Science',
+		university: 'Maejo University',
+		gpax: '3.63',
+		graduationDetail: 'Currently on 4th term, expected graduation: 2025).'
+	}
+];
 
 const projects = [
 	new Project(
@@ -132,9 +141,9 @@ const projects = [
 const interests = [
 	new Interest(
 		'Potential Development',
-		'Coding, Always find new tools to handle and reduce my tasks, Productivity & Life-hacks, Reading'
+		'Coding, Always find new tools to handle and reduce my tasks, Productivity & Life-hacks, Reading.'
 	),
-	new Interest('Running', 'Run 5KM 5 days per week, My longest run distance is 11KM'),
+	new Interest('Running', 'Run 5KM 5 days per week, My longest run distance is 11KM.'),
 	new Interest(
 		'Music',
 		"I'm a music lover. When I have free time, I usually play the guitar or listen to music. "

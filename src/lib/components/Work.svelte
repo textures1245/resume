@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Project } from '$lib/types';
-	import { slide } from 'svelte/transition';
+	// import { slide } from 'svelte/transition';
 	import HidableProp from './HidableProp.svelte';
 
 	export let data: Project[];
@@ -42,7 +42,7 @@
 	}
 
 	h3 {
-		@apply font-bold;
+		@apply font-semibold;
 	}
 
 	.web-only {

@@ -12,7 +12,7 @@
 
 	<div class:print:hidden={isColumnGrid} class="text-center block md:hidden">
 		<h2 class="text-2xl">{data.fullName}</h2>
-		<p class="text-xl text-gray-600">({data.nickname})</p>
+		<p class=" text-xl text-gray-600">({data.nickname})</p>
 	</div>
 </div>
 <div class="">
@@ -27,19 +27,21 @@
 	<a href={data.github.url} target="_blank" rel="noreferrer">github.com/{data.github.label}</a>
 	<a href={data.linkedin.url} target="_blank" rel="noreferrer">LinkedIn/{data.linkedin.label}</a>
 	<a class="print-only" href={data.website} target="_blank" rel="noreferrer">textures1245.resume</a>
+	<a href="https://portfolio-static-website.vercel.app/" target="_blank" rel="noreferrer"
+		>textures1245.portfolio</a
+	>
 </div>
 
 <style lang="postcss">
 	a {
 		text-decoration: underline;
 		text-underline-offset: 0.2rem;
-
 	}
 	h2 {
-		@apply font-bold  text-xl xl:text-3xl;
+		@apply font-bold print:text-lg  text-xl xl:text-3xl;
 	}
 
 	h2 span {
-		@apply text-gray-600  text-base lg:text-lg;
+		@apply  print:text-xs print:inline-flex text-gray-600 text-base lg:text-lg;
 	}
 </style>

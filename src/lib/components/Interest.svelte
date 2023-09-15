@@ -28,6 +28,6 @@
 	}
 
 	h3 {
-		@apply font-bold;
+		@apply font-semibold;
 	}
 </style>

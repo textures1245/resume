@@ -14,7 +14,7 @@
 
 	let data = dataEN;
 
-	let lastedUpdated = new Date('2023-09-15').toLocaleDateString();
+	let lastedUpdated = new Date('2023-09-16').toLocaleDateString();
 
 	langSelected.subscribe((lang) => {
 		data = lang === 'ENG' ? dataEN : dataTH;
@@ -58,7 +58,7 @@
 		<section
 			class:print:grid-cols-3={introColumnGridSetter}
 			id="introduction"
-			class="grid-layout print:-space-y-4 mb-3 mx-6 place-items-center"
+			class="grid-layout font-semibold print:-space-y-4 mb-3 mx-6 place-items-center"
 		>
 			<Introduction isColumnGrid={introColumnGridSetter} data={data.aboutMe} />
 		</section>
@@ -88,12 +88,14 @@
 					<h2>Education</h2>
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
-						<li>
-							<span>{data.education.degree}, {data.education.major}</span>
-							{$langSelected == 'ENG' ? 'at' : 'ที่'}
-							<span>{data.education.university}</span>
-						</li>
-						<li>{data.education.graduationDetail}</li>
+						{#each data.education as edu}
+							<li class="break-words">
+								<span class="font-semibold">{edu.degree}, {edu.major} </span>
+								{$langSelected == 'ENG' ? 'at' : 'ที่'}
+								<span class="font-semibold">{edu.university} (GPAX: {edu.gpax}).</span>
+								{edu.graduationDetail}
+							</li>
+						{/each}
 					</ul>
 				</div>
 			</section>
@@ -195,8 +197,8 @@
 			(สามารถดู <a href={'#'} target="_blank" rel="noopener">เวอร์ชั้นเต็มได้ที่นี้</a>
 			หรือ
 			<a href={'https://github.com/textures1245/resume'} target="_blank" rel="noopener">ซอสโค๊ด</a>)
-			<p  class="m-0">
-				(คุณสามารถดูโปรเจคอื่น ๆและความคืบหน้าของข้าพระเจ้าได้ที่<a href={data.aboutMe.github.url}
+			<p class="m-0">
+				(คุณสามารถดูโปรเจคอื่น ๆและความคืบหน้าของกระผมได้ที่<a href={data.aboutMe.github.url}
 					>Github</a
 				>)
 			</p>
@@ -207,7 +209,7 @@
 </div>
 
 <style lang="postcss">
-	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai+Looped:wght@400&family=Noto+Serif+Thai:wght@400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai+Looped:wght@300&family=Noto+Serif+Thai:wght@300&display=swap');
 	.eng-font {
 		font-family: 'Kanit', sans-serif;
 	}
