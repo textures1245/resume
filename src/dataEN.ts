@@ -19,10 +19,10 @@ const aboutMe: AboutMe = {
 };
 
 const objective =
-	'I am actively pursuing a software engineering internship to leverage my technical skills and contribute to cutting-edge projects while expanding my knowledge in the field. As a dedicated computer science student with a solid foundation, I am excited to apply my proficiency in programming languages. My experience with essential development tools and databases positions me to make valuable contributions to your team. I am enthusiastic about working collaboratively and continuously enhancing my abilities. Joining your organization would provide me with an excellent platform to further develop as a software engineer and contribute to your innovative initiatives.';
+	'I am preparing to do cooperative education in software engineering. It was a great opportunity to apply my technological skills to a modern project. I am a computer student with knowledge and expertise in programming. Experience using development tools and databases. I am ready to contribute to the team and be part of exciting innovative projects. Joining this organization will help in my development as a software engineer and contribute to continuous innovation projects and grow my abilities moving forward.';
 
 const summary =
-	"I am zealous. Passion and commitment to web development and a strong technical skill base. I am proficient in using various programming languages and tools and covering work in various fields. Also, my teamwork is very skilled. I am usually the team leader who consults and then comes to a conclusion on working together. Because I believe that working as a team should have clear goals and objectives. Including communication respecting the reasons of the team members and being open to continuous learning. Moreover, I am also a good counselor and teacher. From the fact that I have been a mentor to countless juniors and am also the head of TA (Team Assistant) who often helps juniors or Participants in the CompCamp project, which is the branch's technology and computer tutoring camp. I am committed and sincerely hope to apply the knowledge learned to actual projects to gain practical experience and participate in innovation development projects.";
+	"I am a person with a passion for web development and basic technical skills. I am proficient in using programming languages and tools. and covers work in various fields They also have the ability to work well as a team. I like to give advice and summarize the group's operations. I believe in clarity of goals and objectives. And I respect team members' reasons and are an important force in communication. I am also a mentor and teaching assistant for many juniors and am responsible for the head of TA (Team Assistant) role in the CompCamp project. I am committed to applying my knowledge in real projects to gain experience and participation in full innovation development.";
 
 const certificates = [
 	new Certificate(
@@ -48,7 +48,7 @@ const technologies = [
 	{
 		section: 'Languages',
 		details:
-			'Assembly, Java (intermediate). Python, SCSS, JavaScript, Node.js, SQL (strong). TypeScript (proficient).'
+			'SCSS, Java (intermediate) Python, CSS, JavaScript, Node.js, SQL (strong) TypeScript (advanced)'
 	},
 	{
 		section: 'Frameworks',
@@ -56,8 +56,7 @@ const technologies = [
 	},
 	{
 		section: 'Tools',
-		details:
-			'Git, Docker, Kubernetes, Zsh, GitHub Codespaces, Prisma, MySQL, MongoDB, PostgreSQL, Eslint,  Figma.'
+		details: 'Git, Docker, Zsh, GitHub Codespaces, Prisma, MySQL, MongoDB, Figma.'
 	},
 	{
 		section: 'Libraries/Plugins',
@@ -65,8 +64,7 @@ const technologies = [
 	},
 	{
 		section: 'Other',
-		details:
-			'Nginx, Firebase, Vercel, Github Actions, CloudFlare, Netlify, Heroku, Cloudinary, Google Cloud, AWS'
+		details: 'Nginx, Firebase, Vercel, Github Actions, Netlify, Heroku, Cloudinary, Google Cloud'
 	}
 ];
 
@@ -152,7 +150,7 @@ const langs = [
 	new Language(
 		'English',
 		'Strong',
-		'I have a proficient reading and listening comprehension, and I can speak smoothly with an almost fluent accent. My writing skills are intermediate.'
+		'I have strong reading and listening skills. and speak smoothly. My writing skills are at a moderate level.'
 	)
 ];
 

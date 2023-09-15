@@ -14,6 +14,8 @@
 
 	let data = dataEN;
 
+	let lastedUpdated = new Date('2023-09-15').toLocaleDateString();
+
 	langSelected.subscribe((lang) => {
 		data = lang === 'ENG' ? dataEN : dataTH;
 	});
@@ -56,7 +58,7 @@
 		<section
 			class:print:grid-cols-3={introColumnGridSetter}
 			id="introduction"
-			class="grid-layout print:-space-y-4 mx-6 place-items-center"
+			class="grid-layout print:-space-y-4 mb-3 mx-6 place-items-center"
 		>
 			<Introduction isColumnGrid={introColumnGridSetter} data={data.aboutMe} />
 		</section>
@@ -66,7 +68,7 @@
 				<div class="">
 					<h2>Objective</h2>
 					<hr />
-					<p>{data.objective}</p>
+					<p class=" indent-4">{data.objective}</p>
 				</div>
 			</section>
 		</HidableProp>
@@ -75,7 +77,7 @@
 				<div class="">
 					<h2>Summary</h2>
 					<hr />
-					<p>{data.summary}</p>
+					<p class="indent-4">{data.summary}</p>
 				</div>
 			</section>
 		</HidableProp>
@@ -105,9 +107,9 @@
 					<ul class="list-disc print:-ml-6 list-inside">
 						{#each data.langs as lang}
 							<HidableProp>
-								<li class="gap-6">
+								<li>
 									<span class="w-16 inline-flex !font-[900]">{lang.lang}</span>
-									<span>( {lang.level} )</span>
+									<span>({lang.level})</span>
 									<p>{lang.detail ?? ''}</p>
 								</li>
 							</HidableProp>
@@ -147,7 +149,7 @@
 							<HidableProp>
 								<li>
 									<span class=" !font-[900]">{cert.title}</span>
-									<span>( {cert.details} )</span>
+									<span class="web-only">( {cert.details} )</span>
 								</li>
 							</HidableProp>
 						{/each}
@@ -179,34 +181,39 @@
 		<hr />
 		{#if $langSelected === 'ENG'}
 			<!-- content here -->
-			(See <a href={'#'} target="_blank" rel="noopener">full version</a>
-			or <a href={'#'} target="_blank" rel="noopener">source</a>)
-			<p>
+			<span>
+				(See <a href={'#'} target="_blank" rel="noopener">full version</a> or
+			</span>
+
+			<a href={'https://github.com/textures1245/resume'} target="_blank" rel="noopener">source</a>)
+			<p class="m-0">
 				(You can see more projects that I had done on my <a href={data.aboutMe.github.url}>Github</a
 				>)
 			</p>
+			<p class="m-0 text-slate-500">Last updated : {lastedUpdated}</p>
 		{:else}
 			(สามารถดู <a href={'#'} target="_blank" rel="noopener">เวอร์ชั้นเต็มได้ที่นี้</a>
 			หรือ
 			<a href={'https://github.com/textures1245/resume'} target="_blank" rel="noopener">ซอสโค๊ด</a>)
-			<p>
+			<p  class="m-0">
 				(คุณสามารถดูโปรเจคอื่น ๆและความคืบหน้าของข้าพระเจ้าได้ที่<a href={data.aboutMe.github.url}
 					>Github</a
 				>)
 			</p>
+			<p class="m-0 text-slate-500">อัปเดตครั้งล่าสุดเมื่อ : {lastedUpdated}</p>
 		{/if}
 		<section />
 	</footer>
 </div>
 
 <style lang="postcss">
-	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai:wght@400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans+Thai+Looped:wght@400&family=Noto+Serif+Thai:wght@400&display=swap');
 	.eng-font {
 		font-family: 'Kanit', sans-serif;
 	}
 
 	.thai-font {
-		font-family: 'Noto Sans Thai', sans-serif;
+		font-family: 'Noto Sans Thai Looped', sans-serif;
 	}
 
 	main {
@@ -220,7 +227,7 @@
 	button,
 	a {
 		text-decoration: underline;
-		text-underline-offset: 0.3rem;
+		text-underline-offset: 0.2rem;
 	}
 
 	div p {
@@ -261,7 +268,7 @@
 	}
 
 	footer hr {
-		@apply my-4
+		@apply my-4;
 	}
 
 	:global(.print-only) {
@@ -269,6 +276,11 @@
 	}
 
 	@media print {
+		p {
+			text-wrap: balance;
+			@apply mr-2;
+		}
+
 		* {
 			@apply text-xs;
 		}
@@ -286,11 +298,11 @@
 		}
 
 		section {
-			@apply -my-1;
+			@apply my-0;
 		}
 
 		section div hr {
-			@apply -mt-3 mb-1;
+			@apply -mt-2 mb-1;
 		}
 
 		main {

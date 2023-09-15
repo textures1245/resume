@@ -6,7 +6,7 @@
 </script>
 
 <div class:print:col-span-1={isColumnGrid} class="col-span-full space-y-2 md:col-span-1">
-	<figure class="flex justify-center">
+	<figure class="">
 		<img class="print:w-24 w-48" src={myPic} alt="phakh_pic" />
 	</figure>
 
@@ -25,13 +25,15 @@
 </div>
 <div class="flex flex-col items-end">
 	<a href={data.github.url} target="_blank" rel="noreferrer">github.com/{data.github.label}</a>
-	<a href={data.linkedin.url} target="_blank" rel="noreferrer">LinkedIn</a>
-	<a href={data.website} target="_blank" rel="noreferrer">textures1245.is.a.dev</a>
+	<a href={data.linkedin.url} target="_blank" rel="noreferrer">LinkedIn/{data.linkedin.label}</a>
+	<a class="print-only" href={data.website} target="_blank" rel="noreferrer">textures1245.resume</a>
 </div>
 
 <style lang="postcss">
 	a {
 		text-decoration: underline;
+		text-underline-offset: 0.2rem;
+
 	}
 	h2 {
 		@apply font-bold  text-xl xl:text-3xl;

@@ -13,8 +13,13 @@
 				<ul class="list-disc list-inside">
 					<li>
 						<span class="font-extrabold">{p.name}</span> - <span>{p.details}</span>
-						<a rel="noreferrer" target="_blank" href={p.url ?? '#'}>{p.url?.slice(8) ?? ''}</a>
-						<a class="web-only" href={p.sourceCode} target="_blank" rel="noreferrer">(source)</a>
+						<a
+							class:print-only={!p.url}
+							rel="noreferrer"
+							target="_blank"
+							href={p.url ?? p.sourceCode}>{p.url?.slice(8) ?? p.sourceCode.slice(8)}</a
+						>
+						<!-- <a class="web-only" href={p.sourceCode} target="_blank" rel="noreferrer">(source)</a> -->
 					</li>
 				</ul>
 			</div>
@@ -29,7 +34,11 @@
 
 	a {
 		text-decoration: underline;
+
+		text-underline-offset: 0.1rem;
+
 		font-weight: 800;
+		@apply inline-block;
 	}
 
 	h3 {
