@@ -15,7 +15,7 @@ const aboutMe: AboutMe = {
 		url: 'https://www.linkedin.com/in/traiphakh-sittikaew-b32ba8290/'
 	},
 	location: 'Chiang Mai, Thailand',
-	website: 'https://resume-gamma-topaz.vercel.app/'
+	website: 'https://resume-gamma-topaz.vercel.app'
 };
 
 const objective =
@@ -100,7 +100,7 @@ const projects = [
 		false,
 		'TypeScript (VueJS, Pinia), SCSS, TailwindCSS, Firebase',
 		'https://github.com/textures1245/BookingBest-HotelApplication',
-		'https://booking-best-hotel-application.vercel.app/'
+		'https://booking-best-hotel-application.vercel.app'
 	),
 	new Project(
 		'Blocktify (Frontend Contributed)',
@@ -125,7 +125,7 @@ const projects = [
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase Realtime Database',
 		'https://github.com/textures1245/wishlist-app',
-		'https://wishlist-management-app.web.app/'
+		'https://wishlist-management-app.web.app'
 	),
 	new Project(
 		'Portfolio (Standalone)',
@@ -134,7 +134,7 @@ const projects = [
 		false,
 		'SCSS',
 		'https://github.com/textures1245/portfolio-static-website',
-		'https://portfolio-static-website.vercel.app/'
+		'https://portfolio-static-website.vercel.app'
 	)
 ];
 

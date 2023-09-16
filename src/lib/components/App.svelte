@@ -68,7 +68,7 @@
 				<div class="">
 					<h2>Objective</h2>
 					<hr />
-					<p class=" indent-4">{data.objective}</p>
+					<p class="indent-4">{data.objective}</p>
 				</div>
 			</section>
 		</HidableProp>
@@ -257,7 +257,11 @@
 		@apply my-2;
 	}
 	section div {
-		@apply mx-6 print:mx-0;
+		@apply mx-6 print:mx-0 text-sm md:text-base;
+	}
+
+	footer {
+		@apply text-sm md:text-base;
 	}
 
 	section div h2 {
@@ -310,6 +314,10 @@
 		main {
 			margin: 0 0;
 			padding: 0;
+		}
+
+		::-webkit-scrollbar {
+			display: none;
 		}
 	}
 </style>

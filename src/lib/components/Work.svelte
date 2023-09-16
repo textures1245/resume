@@ -58,5 +58,9 @@
 		.web-only {
 			@apply hidden;
 		}
+
+		* {
+			@apply text-xs;
+		}
 	}
 </style>

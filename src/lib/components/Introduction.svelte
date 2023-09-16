@@ -26,9 +26,20 @@
 <div class="flex flex-col items-end">
 	<a href={data.github.url} target="_blank" rel="noreferrer">github.com/{data.github.label}</a>
 	<a href={data.linkedin.url} target="_blank" rel="noreferrer">LinkedIn/{data.linkedin.label}</a>
-	<a class="print-only" href={data.website} target="_blank" rel="noreferrer">textures1245.resume</a>
-	<a href="https://portfolio-static-website.vercel.app/" target="_blank" rel="noreferrer"
-		>textures1245.portfolio</a
+	<a class="print-only" href={data.website} target="_blank" rel="noreferrer"
+		>{data.website.slice(8)}</a
+	>
+	<a
+		class="web-only"
+		href="https://portfolio-static-website.vercel.app"
+		target="_blank"
+		rel="noreferrer">portfolio/textures1245</a
+	>
+	<a
+		class="print-only"
+		href="https://portfolio-static-website.vercel.app"
+		target="_blank"
+		rel="noreferrer">portfolio-static-website.vercel.app</a
 	>
 </div>
 
@@ -38,7 +49,7 @@
 		text-underline-offset: 0.2rem;
 	}
 	h2 {
-		@apply font-bold print:text-[1.23rem]  text-xl xl:text-3xl;
+		@apply font-bold print:text-[1.22rem]  text-xl xl:text-3xl;
 	}
 
 	h2 span {
