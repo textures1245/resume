@@ -30,4 +30,10 @@
 	h3 {
 		@apply font-semibold;
 	}
+
+	@media print {
+		* {
+			@apply text-xs
+		}
+	}
 </style>
