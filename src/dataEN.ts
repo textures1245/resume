@@ -79,8 +79,8 @@ const education = [
 		degree: 'Bachelor of Science',
 		major: 'Computer Science',
 		university: 'Maejo University',
-		gpax: '3.63',
-		graduationDetail: 'Currently on 4th term, expected graduation: 2025).'
+		gpax: '3.67',
+		graduationDetail: 'Currently in 6th term (the third-year, second semester), expected graduation in 2025.'
 	}
 ];
 
