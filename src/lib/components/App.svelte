@@ -1,3 +1,7 @@
+<script context="module" lang="ts">
+	export const langSelected: Writable<'TH' | 'ENG'> = writable('ENG');
+</script>
+
 <script lang="ts">
 	import { Certificate, Language } from '$lib/builders';
 	import Interest from './Interest.svelte';
@@ -9,12 +13,11 @@
 	import Header from './Header.svelte';
 	import { writable, type Writable } from 'svelte/store';
 
-	const langSelected: Writable<'TH' | 'ENG'> = writable('ENG');
 	let introColumnGridSetter = true;
 
 	let data = dataEN;
 
-	let lastedUpdated = new Date('2023-11-20').toLocaleDateString();
+	let lastedUpdated = new Date('2023-12-18').toLocaleDateString();
 
 	langSelected.subscribe((lang) => {
 		data = lang === 'ENG' ? dataEN : dataTH;

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Project } from '$lib/types';
-	// import { slide } from 'svelte/transition';
+	import { langSelected } from '$lib/components/App.svelte';
 	import HidableProp from './HidableProp.svelte';
 
 	export let data: Project[];
@@ -19,6 +19,10 @@
 							target="_blank"
 							href={p.url ?? p.sourceCode}>{p.url?.slice(8) ?? p.sourceCode.slice(8)}</a
 						>
+						<ul class="print:hidden block list-inside text-slate-600 text-sm list-disc">
+							<li class="">{$langSelected === 'ENG' ? 'Procedure' : 'ขั้นตอน'}: {p.procedure}</li>
+							<li class="">{$langSelected === 'ENG' ? 'Tech-Stacks' : 'เทคสแต็ก'}: {p.techStack}</li>
+						</ul>
 						<!-- <a class="web-only" href={p.sourceCode} target="_blank" rel="noreferrer">(source)</a> -->
 					</li>
 				</ul>

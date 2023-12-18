@@ -48,7 +48,8 @@ const certificates = [
 const technologies = [
 	{
 		section: 'Languages',
-		details: 'SCSS, Java (ระดับกลาง) Python, CSS, JavaScript, Node.js, SQL (ดี) TypeScript (ดีมาก)'
+		details:
+			'SCSS, Java (ขั้นต้น) Java, Python, Node.js, SQL (ปานกลาง)  CSS, JavaScript, TypeScript (ดี)'
 	},
 	{
 		section: 'Frameworks',
@@ -86,6 +87,14 @@ const education = [
 ];
 
 const projects = [
+	new Project(
+		'Comcamp CSMJU',
+		'เป็นค่ายคอมพิวเตอร์เยาวชนที่จัดขึ้นเป็นประจำทุกปีที่ ของสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ โดยออกแบบมาเพื่อโปรโมตนักเรียนมัธยมปลายให้รู้จักกับวิทยาการคอมพิวเตอร์และการเขียนโปรแกรม ประกอบไปด้วย Landing Page ที่ไว้โปรโมต และเว็บแอปพลิเคชันที่รองรับการลงทะเบียนและการจัดการข้อมูลของผู้ลงสมัครค่าย',
+		'ใช้ Svelte แบบ SPA ในการพัฒนาร่วมกับ Typescript การจัดรูปแบบด้วย CSS และ TailwindCSS. เชื่อมต่อกับตัวเซิร์ฟเวอร์ไซต์ด้วย Firebase (Authentication) และ Firestore (สำหรับจัดการฐานข้อมูล) และ Node.js ผ่าน ExpressJS. (สำหรับ Private Restful APIs) และ Cloundinary สำหรับจัดการ Media Storage',
+		false,
+		'TypeScript (Svelte-SPA), CSS, TailwindCSS, Firebase, Node.js (ExpressJS), Cloundinary',
+		'https://comcamp.csmju.com'
+	),
 	new Project(
 		'Homework Management',
 		'การจัดการงานภารกิจที่สามารถจัดกลุ่มและระบุอาจารย์พร้อมกับวันที่ส่งงาน. รองรับระบบ CRUD ทั้งงานเดียวและงานภารกิจแบบกลุ่ม.',

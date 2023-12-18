@@ -47,7 +47,7 @@ const technologies = [
 	{
 		section: 'Languages',
 		details:
-			'SCSS, Java (intermediate) Python, CSS, JavaScript, Node.js, SQL (strong) TypeScript (advanced)'
+			'SCSS (Basic) Java, Python, Node.js, SQL (Intermediate) JavaScript, CSS, TypeScript (strong)'
 	},
 	{
 		section: 'Frameworks',
@@ -80,11 +80,20 @@ const education = [
 		major: 'Computer Science',
 		university: 'Maejo University',
 		gpax: '3.67',
-		graduationDetail: 'Currently in 6th term (the third-year, second semester), expected graduation in 2025.'
+		graduationDetail:
+			'Currently in 6th term (the third-year, second semester), expected graduation in 2025.'
 	}
 ];
 
 const projects = [
+	new Project(
+		'Comcamp CSMJU',
+		'Comcamp CSMJU is an annual youth computer camp organized by the Computer Science Department of Maejo University. It is designed to promote high school students familiarity with computer science and programming. The project includes a Landing Page for promotion and a web application that supports registration and data management of camp applicants.',
+		'The project utilizes Single Page Application (SPA) approach with Svelte, coupled with TypeScript for development. Styling is achieved using CSS and TailwindCSS. It connects to the server-side using Firebase (for Authentication) and Firestore (for database management), and Node.js via ExpressJS (for private Restful APIs). Cloudinary is used for media storage management.',
+		false,
+		'TypeScript (Svelte-SPA), CSS, TailwindCSS, Firebase, Node.js (ExpressJS), Cloudinary',
+		'https://comcamp.csmju.com'
+	),
 	new Project(
 		'Homework Management',
 		'Task management that can be grouped and identified by teachers along with the date of submission of work. Supports the CRUD system for both single tasks and group missions.',
