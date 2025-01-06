@@ -1,4 +1,11 @@
-import { Certificate, Project, Interest, Language } from '$lib/builders';
+import {
+	Certificate,
+	Project,
+	Interest,
+	Language,
+	WorkProject,
+	WorkExperience
+} from '$lib/builders';
 
 const aboutMe = {
 	fullName: 'ไตรภาค สิทธิแก้ว',
@@ -49,23 +56,22 @@ const technologies = [
 	{
 		section: 'Languages',
 		details:
-			'SCSS, Java (ขั้นต้น) Java, Python, Node.js, SQL (ปานกลาง)  CSS, JavaScript, TypeScript (ดี)'
+			'SCSS (Basic) Java, Python, Node.js, SQL (Intermediate) JavaScript/JS Notation, CSS, TypeScript, Go (strong)'
 	},
 	{
 		section: 'Frameworks',
-		details: 'Angular, VueJS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap.'
+		details:
+			'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native go/http) .'
 	},
 	{
 		section: 'Tools',
-		details: 'Git, Docker, Zsh, GitHub Codespaces, Prisma, MySQL, MongoDB, Figma.'
-	},
-	{
-		section: 'Libraries/Plugins',
-		details: 'Express, RxJs, NgRx, Angular Materials, Vuetify, Pinia, DaisyUI, Zod, etc.'
+		details:
+			'Git, Docker-Compose, Zsh, Bash, SSH, GitHub Codespace, Prisma, MySQL, MongoDB, SQLServer, Figma.'
 	},
 	{
 		section: 'Other',
-		details: 'Nginx, Firebase, Vercel, Github Actions, Netlify, Heroku, Cloudinary, Google Cloud'
+		details:
+			'Nginx, Firebase, Gitlab CI/CD, Jenkins, Vercel, Netlify, Heroku, Cloudinary, Google Cloud'
 	}
 ];
 
@@ -86,7 +92,56 @@ const education = [
 	}
 ];
 
-const projects = [
+const workExps = [
+	new WorkExperience(
+		'Pay Solutions, Ltd.',
+		'เม.ย - ธ.ค 2024',
+		'เชียงใหม่, ประเทศไทย',
+		'Junior Fullstack Developer',
+		'เป็นผู้นำในการพัฒนาและบำรุงรักษา Microservice และมีส่วนร่วมในโครงการซอฟต์แวร์ภายในหลายโครงการ ซึ่งได้รับมอบหมายตั้งแต่การรวบรวมความต้องการ การวางแผนสถาปัตยกรรม และการออกแบบสคีมาฐานข้อมูล ผมได้พัฒนาฟีเจอร์หลักและปรับปรุงอย่างต่อเนื่องผ่านการทดสอบและการวิเคราะห์ รวมถึงเขียนโปรแกรมช่วยเหลือเพื่อเพิ่มประสิทธิภาพ นอกจากนี้ ผมยังพัฒนาการทดสอบอัตโนมัติแบบ end-to-end เพื่อให้แน่ใจว่ามีความเข้ากันได้กับ in-houses application อื่น ๆ ที่รวมกับ Microservice อีกทั้งได้พัฒนา Microservice เพิ่มเติมเพื่อที่สามารถให้ Third-Party ใช้งานร่วม (Open API) ',
+		false
+	)
+];
+
+const workProject = [
+	new WorkProject(
+		'SureSure Slip Verification Microservice',
+		'เป็นคนนำและเป็นหนึ่งในทีมแรกที่เริ่มวิจัยและพัฒนาไมโครเซอร์วิสหลักที่ให้บริการตรวจสอบสลิปแบบเรียลไทม์ด้วยการสแกน OCR และการเชื่อมต่อกับ KBANK ระบบนี้รองรับการรวมบริการภายในสำหรับผลิตภัณฑ์ในองค์กรและ Open API ภายนอกสำหรับการใช้งานของ Third-Party รวมถึงพัฒนา Business Logic บน Pay Solution Infrastructure',
+		[
+			{
+				name: 'การรวบรวมความต้องการและการวางแผนโครงการ',
+				details:
+					'ร่วมมือกับ Project Manager เพื่อกำหนดความต้องการทางธุรกิจและวัตถุประสงค์'
+			},
+			{
+				name: 'การออกแบบสถาปัตยกรรมและฐานข้อมูล',
+				details:
+					'ออกแบบสคีมาฐานข้อมูลเพื่อเก็บบันทึกสลิป ข้อมูลผู้ค้า และบันทึกการทำธุรกรรม สถาปัตยกรรมนี้รองรับทั้งบริการภายในและภายนอก (Third-party integration)'
+			},
+			{
+				name: 'การพัฒนาฟีเจอร์หลัก',
+				details:
+					'พัฒนาฟีเจอร์การสแกน OCR หลักและเชื่อมต่อกับ KBANK เพื่อการตรวจสอบสลิป เขียนตรรกะทางธุรกิจเพื่อเปรียบเทียบข้อมูลสลิปกับบันทึกของธนาคาร เพื่อให้แน่ใจว่าถูกต้องและลดการฉ้อโกง'
+			},
+			{
+				name: 'การรวมบริการและการปรับใช้',
+				details:
+					'กำหนดค่าไมโครเซอร์วิสให้ทำงานร่วมกันได้อย่างราบรื่น โดยเปิดเผย API สำหรับผู้บริโภคภายนอก อีกทั้งดูแลการปรับใช้ด้วย Docker และทำ CI/CD เพื่อให้แน่ใจว่าบริการแต่ละอย่างถูกส่งมอบอย่างสม่ำเสมอและง่ายต่อการขยาย'
+			},
+			{
+				name: 'การจัดทำเอกสารและการถ่ายทอดความรู้',
+				details:
+					'เป็นผู้นำในการจัดทำเอกสารแนวทาง รวมถึงการพิจารณาด้านการออกแบบและคำแนะนำการใช้งาน ซึ่งช่วยให้เพื่อนร่วมทีมและทีมอื่น ๆ สามารถติดตามแต่ละขั้นตอนของการดำเนินการได้อย่างง่ายดาย รวมถึงอ้างอิงแนวปฏิบัติที่ดีที่สุดสำหรับการบำรุงรักษา'
+			}
+		],
+		'Pay Solutions, Ltd.',
+		false,
+		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
+		'-'
+	)
+];
+
+const sideProjects = [
 	new Project(
 		'Comcamp CSMJU',
 		'เป็นค่ายคอมพิวเตอร์เยาวชนที่จัดขึ้นเป็นประจำทุกปีที่ ของสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ โดยออกแบบมาเพื่อโปรโมตนักเรียนมัธยมปลายให้รู้จักกับวิทยาการคอมพิวเตอร์และการเขียนโปรแกรม ประกอบไปด้วย Landing Page ที่ไว้โปรโมต และเว็บแอปพลิเคชันที่รองรับการลงทะเบียนและการจัดการข้อมูลของผู้ลงสมัครค่าย',
@@ -180,7 +235,9 @@ export const dataTH = {
 	certificates,
 	technologies,
 	education,
-	projects,
+	sideProjects,
+	workProject,
 	interests,
-	langs
+	langs,
+	workExps
 };

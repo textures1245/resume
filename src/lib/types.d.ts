@@ -25,6 +25,16 @@ type Education = {
 };
 
 // Define TypeScript types for your objects
+type WorkProject = {
+	name: string;
+	details: string;
+	subProcedure: string[]
+	onHide: false;
+	techStack: string;
+	sourceCode: string;
+	url?: string;
+};
+
 type Project = {
 	name: string;
 	details: string;
@@ -58,4 +68,4 @@ type Language = {
 };
 
 // Export the types
-export { Project, Certificate, Technology, Interest, Language, AboutMe, Education };
+export { WorkProject, Project, Certificate, Technology, Interest, Language, AboutMe, Education };

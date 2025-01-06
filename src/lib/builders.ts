@@ -1,3 +1,30 @@
+class WorkExperience {
+	constructor(
+		public companyName: string,
+		public date: string,
+		public located: string,
+		public role: string,
+		public details: string,
+		public onHide: false,
+	) {}
+}
+
+class WorkProject {
+	constructor(
+		public name: string,
+		public details: string,
+		public subProcedure: {
+			name: string;
+			details: string;
+		}[],
+		public company: string,
+		public onHide: false,
+		public techStack: string,
+		public sourceCode: string,
+		public url?: string
+	) {}
+}
+
 class Project {
 	constructor(
 		public name: string,
@@ -6,7 +33,11 @@ class Project {
 		public onHide: false,
 		public techStack: string,
 		public sourceCode: string,
-		public url?: string
+		public url?: string,
+		public subProcedure?: {
+			name: string;
+			details: string;
+		}[]
 	) {}
 }
 
@@ -26,4 +57,4 @@ class Language {
 	constructor(public lang: string, public level: string, public detail?: string) {}
 }
 
-export { Project, Technology, Certificate, Interest, Language };
+export { WorkExperience, WorkProject, Project, Technology, Certificate, Interest, Language };

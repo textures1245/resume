@@ -1,4 +1,11 @@
-import { Project, Certificate, Interest, Language } from '$lib/builders';
+import {
+	Project,
+	Certificate,
+	Interest,
+	Language,
+	WorkProject,
+	WorkExperience
+} from '$lib/builders';
 import type { AboutMe } from '$lib/types';
 
 const aboutMe: AboutMe = {
@@ -47,23 +54,19 @@ const technologies = [
 	{
 		section: 'Languages',
 		details:
-			'SCSS (Basic) Java, Python, Node.js, SQL (Intermediate) JavaScript, CSS, TypeScript (strong)'
+			'SCSS (Basic) Java, Python, Node.js, SQL (Intermediate) JavaScript/JS Notation, CSS, TypeScript, Go (strong)'
 	},
 	{
 		section: 'Frameworks',
-		details: 'Angular, VueJS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap.'
+		details: 'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native go/http) .'
 	},
 	{
 		section: 'Tools',
-		details: 'Git, Docker, Zsh, GitHub Codespaces, Prisma, MySQL, MongoDB, Figma.'
-	},
-	{
-		section: 'Libraries/Plugins',
-		details: 'Express, RxJs, NgRx, Angular Materials, Vuetify, Pinia, DaisyUI, Zod, etc.'
+		details: 'Git, Docker-Compose, Zsh, Bash, SSH, GitHub Codespace, Prisma, MySQL, MongoDB, SQLServer, Figma.'
 	},
 	{
 		section: 'Other',
-		details: 'Nginx, Firebase, Vercel, Github Actions, Netlify, Heroku, Cloudinary, Google Cloud'
+		details: 'Nginx, Firebase, Gitlab CI/CD, Jenkins, Vercel, Netlify, Heroku, Cloudinary, Google Cloud'
 	}
 ];
 
@@ -81,11 +84,60 @@ const education = [
 		university: 'Maejo University',
 		gpax: '3.67',
 		graduationDetail:
-			'Currently in 6th term (the third-year, second semester), expected graduation in 2025.'
+			'Currently in 8th term (the fourth-year, second semester), expected graduation in 2025.'
 	}
 ];
 
-const projects = [
+const workExps = [
+	new WorkExperience(
+		'Pay Solutions, Ltd.',
+		'May - Dec 2024',
+		'Chiang Mai, Thailand',
+		'Junior Fullstack Developer',
+		'I led the development and maintenance of microservice and contributed to various in-house software projects. My responsibilities included gathering requirements, planning the architecture, and designing the database schema. I implemented core features and continuously improved them through testing and analysis, writing helper utilities to enhance functionality. Additionally, I developed end-to-end automated tests to ensure compatibility with other in-house applications integrated with the microservice. I also implemented microservice for seamless third-party integration.',
+		false
+	)
+];
+
+const workProject = [
+	new WorkProject(
+		'SureSure E-Slip Verification Microservice',
+		'I contributed and was the leader of the first team to start the research and development of a core microservice that offers real-time slip verification with OCR-based scanning and KBANK integration. The system supports both internal service integration for in-house products and an external Open API for broader third-party use, and it unifies business logic on the Paysolution infrastructure.',
+		[
+			{
+				name: 'Requirements Gathering & Project Planning',
+				details:
+					'Collaborating with the Project Manager to define business requirements and objectives '
+			},
+			{
+				name: 'Architecture & Database Design',
+				details:
+					'Designed the database schema to store slip records, merchant information, and transaction logs. The architecture accounted for both internal and external services (third-party).'
+			},
+			{
+				name: 'Implementation of Core Features',
+				details:
+					'Developed core OCR scanning features and integrated them with KBANK for slip validation.  Wrote business logic to compare slip data against bank records, ensuring correctness and reducing fraud.'
+			},
+			{
+				name: 'Service Integration & Deployment',
+				details:
+					'Configured microservices to interact seamlessly with one another, exposing APIs for external consumers. I oversaw Docker-based and did CI/CD for deployments to ensure each service was consistently delivered and easy to scale.'
+			},
+			{
+				name: 'Documentation & Knowledge Transfer',
+				details:
+					'Wrote documentation, including design considerations and usage instructions. Allowed teammates and other teams to easily follow each step of the implementation, plus reference best practices for maintenance.'
+			}
+		],
+		'Pay Solutions, Ltd.',
+		false,
+		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
+		'-'
+	)
+];
+
+const sideProjects = [
 	new Project(
 		'Comcamp CSMJU',
 		'Comcamp CSMJU is an annual youth computer camp organized by the Computer Science Department of Maejo University. It is designed to promote high school students familiarity with computer science and programming. The project includes a Landing Page for promotion and a web application that supports registration and data management of camp applicants.',
@@ -179,7 +231,9 @@ export const dataEN = {
 	certificates,
 	technologies,
 	education,
-	projects,
+	sideProjects,
+	workProject,
 	interests,
-	langs
+	langs,
+	workExps
 };

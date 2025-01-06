@@ -12,12 +12,14 @@
 	import HidableProp from './HidableProp.svelte';
 	import Header from './Header.svelte';
 	import { writable, type Writable } from 'svelte/store';
+	import WorkProject from './WorkProject.svelte';
+	import WorkExp from './WorkExp.svelte';
 
 	let introColumnGridSetter = true;
 
 	let data = dataEN;
 
-	let lastedUpdated = new Date('2023-12-18').toLocaleDateString();
+	let lastedUpdated = new Date('2025-01-06').toLocaleDateString();
 
 	langSelected.subscribe((lang) => {
 		data = lang === 'ENG' ? dataEN : dataTH;
@@ -164,11 +166,31 @@
 		</HidableProp>
 
 		<HidableProp>
-			<section id="projects">
+			<section id="work-projects">
 				<div>
-					<h2>Projects</h2>
+					<h2>Work Experience</h2>
 					<hr />
-					<Work data={data.projects} />
+					<WorkExp data={data.workExps} />
+				</div>
+			</section>
+		</HidableProp>
+
+		<HidableProp>
+			<section id="work-projects">
+				<div>
+					<h2>Work Projects</h2>
+					<hr />
+					<WorkProject data={data.workProject} />
+				</div>
+			</section>
+		</HidableProp>
+
+		<HidableProp>
+			<section id="side-projects">
+				<div>
+					<h2>Side Projects</h2>
+					<hr />
+					<Work data={data.sideProjects} />
 				</div>
 			</section>
 		</HidableProp>
