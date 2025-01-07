@@ -70,7 +70,7 @@
 
 		<HidableProp>
 			<section id="objective" class="">
-				<div class="">
+				<div class="text-justify">
 					<h2>Objective</h2>
 					<hr />
 					<p class="indent-4">{data.objective}</p>
@@ -79,7 +79,7 @@
 		</HidableProp>
 		<HidableProp>
 			<section id="summary">
-				<div class="">
+				<div class="text-justify">
 					<h2>Summary</h2>
 					<hr />
 					<p class="indent-4">{data.summary}</p>
@@ -89,7 +89,7 @@
 
 		<HidableProp>
 			<section id="education">
-				<div class="">
+				<div class="text-justify">
 					<h2>Education</h2>
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
@@ -108,7 +108,7 @@
 
 		<HidableProp>
 			<section id="langs">
-				<div class="">
+				<div class="text-justify">
 					<h2>Languages</h2>
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
@@ -128,7 +128,7 @@
 
 		<HidableProp>
 			<section id="skills">
-				<div class="">
+				<div class="text-justify">
 					<h2>Technical Skills</h2>
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
@@ -148,7 +148,7 @@
 
 		<HidableProp>
 			<section id="certificates">
-				<div class="">
+				<div class="text-justify">
 					<h2>Certificates</h2>
 					<hr />
 					<ul class="list-disc print:-ml-6 list-inside">
@@ -167,7 +167,7 @@
 
 		<HidableProp>
 			<section id="work-projects">
-				<div>
+				<div class="text-justify">
 					<h2>Work Experience</h2>
 					<hr />
 					<WorkExp data={data.workExps} />
@@ -177,7 +177,7 @@
 
 		<HidableProp>
 			<section id="work-projects">
-				<div>
+				<div class="text-justify">
 					<h2>Work Projects</h2>
 					<hr />
 					<WorkProject data={data.workProject} />
@@ -187,7 +187,7 @@
 
 		<HidableProp>
 			<section id="side-projects">
-				<div>
+				<div >
 					<h2>Side Projects</h2>
 					<hr />
 					<Work data={data.sideProjects} />
@@ -196,7 +196,7 @@
 		</HidableProp>
 		<HidableProp>
 			<section id="interest">
-				<div>
+				<div class="text-justify ">
 					<h2>Interests</h2>
 					<hr />
 					<Interest data={data.interests} />
@@ -308,7 +308,7 @@
 
 	@media print {
 		p {
-			text-wrap: balance;
+			text-justify: balance;
 			@apply mr-2;
 		}
 

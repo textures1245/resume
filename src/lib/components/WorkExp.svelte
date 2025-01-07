@@ -13,8 +13,8 @@
 				<ul class="list-disc list-inside">
 					<li>
 						<span class="">{p.companyName} -- {p.located}</span>
-						<p class="mb-2">
-							<span class="font-extrabold">{p.role},</span> <span> {"   " + p.date}</span>
+						<p class="print:mb-0 mb-2  flex justify-between items-center">
+							<span class="font-extrabold">{p.role}</span> <i class=""> {p.date}</i>
 						</p>
 						<p class="">
 							{p.details}

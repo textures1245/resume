@@ -12,7 +12,7 @@
 			<div class="">
 				<ul class="list-disc list-inside">
 					<li>
-						<span class="font-extrabold">{p.name}</span> - <span>{p.details}</span>
+						<span class="font-extrabold  hyphens-auto" lang="de">{p.name}</span> - <span>{p.details}</span>
 						<a
 							class:print-only={!p.url}
 							rel="noreferrer"
@@ -21,7 +21,9 @@
 						>
 						<ul class="print:hidden block list-inside text-slate-600 text-sm list-disc">
 							<li class="">{$langSelected === 'ENG' ? 'Procedure' : 'ขั้นตอน'}: {p.procedure}</li>
-							<li class="">{$langSelected === 'ENG' ? 'Tech-Stacks' : 'เทคสแต็ก'}: {p.techStack}</li>
+							<li class="">
+								{$langSelected === 'ENG' ? 'Tech-Stacks' : 'เทคสแต็ก'}: {p.techStack}
+							</li>
 						</ul>
 						<!-- <a class="web-only" href={p.sourceCode} target="_blank" rel="noreferrer">(source)</a> -->
 					</li>

@@ -58,7 +58,7 @@ const technologies = [
 	},
 	{
 		section: 'Frameworks',
-		details: 'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native go/http) .'
+		details: 'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native net/http) .'
 	},
 	{
 		section: 'Tools',

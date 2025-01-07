@@ -61,7 +61,7 @@ const technologies = [
 	{
 		section: 'Frameworks',
 		details:
-			'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native go/http) .'
+			'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native net/http) .'
 	},
 	{
 		section: 'Tools',
@@ -98,7 +98,7 @@ const workExps = [
 		'เม.ย - ธ.ค 2024',
 		'เชียงใหม่, ประเทศไทย',
 		'Junior Fullstack Developer',
-		'เป็นผู้นำในการพัฒนาและบำรุงรักษา Microservice และมีส่วนร่วมในโครงการซอฟต์แวร์ภายในหลายโครงการ ซึ่งได้รับมอบหมายตั้งแต่การรวบรวมความต้องการ การวางแผนสถาปัตยกรรม และการออกแบบสคีมาฐานข้อมูล ผมได้พัฒนาฟีเจอร์หลักและปรับปรุงอย่างต่อเนื่องผ่านการทดสอบและการวิเคราะห์ รวมถึงเขียนโปรแกรมช่วยเหลือเพื่อเพิ่มประสิทธิภาพ นอกจากนี้ ผมยังพัฒนาการทดสอบอัตโนมัติแบบ end-to-end เพื่อให้แน่ใจว่ามีความเข้ากันได้กับ in-houses application อื่น ๆ ที่รวมกับ Microservice อีกทั้งได้พัฒนา Microservice เพิ่มเติมเพื่อที่สามารถให้ Third-Party ใช้งานร่วม (Open API) ',
+		'เป็นคนนำในการพัฒนาและบำรุงรักษา Microservice และมีส่วนร่วมในโครงการซอฟต์แวร์ภายในหลายโครงการ ซึ่งได้รับมอบหมายตั้งแต่การรวบรวมความต้องการ การวางแผนสถาปัตยกรรม และการออกแบบสคีมาฐานข้อมูล ผมได้พัฒนาฟีเจอร์หลักและปรับปรุงอย่างต่อเนื่องผ่านการทดสอบและการวิเคราะห์ รวมถึงเขียนโปรแกรมช่วยเหลือ (Helper Utilizes) เพื่อเพิ่มประสิทธิภาพ นอกจากนี้ ผมยังพัฒนาการทดสอบอัตโนมัติ (Automated Test) แบบ end-to-end เพื่อให้แน่ใจว่ามีความเข้ากันได้กับ In-houses Application อื่น ๆ ที่รวมกับ Microservice อีกทั้งได้พัฒนา Microservice เพิ่มเติมเพื่อที่สามารถให้ Third-Party ใช้งานร่วม (Open API) ',
 		false
 	)
 ];
