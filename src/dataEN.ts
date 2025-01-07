@@ -102,7 +102,7 @@ const workExps = [
 const workProject = [
 	new WorkProject(
 		'SureSure E-Slip Verification Microservice',
-		'I contributed and was the leader of the first team to start the research and development of a core microservice that offers real-time slip verification with OCR-based scanning and KBANK integration. The system supports both internal service integration for in-house products and an external Open API for broader third-party use, and it unifies business logic on the Paysolution infrastructure.',
+		'I contributed and was the leader of the first team to start the research and development of a core microservice that offers real-time slip verification with OCR-based scanning and  BOT (Bank of Thailand) transaction data from integration on KBANK API infrastructure. The system supports both internal service integration for in-house products and an external Open API for broader third-party use, and it unifies business logic on the Paysolution infrastructure.',
 		[
 			{
 				name: 'Requirements Gathering & Project Planning',
@@ -132,7 +132,7 @@ const workProject = [
 		],
 		'Pay Solutions, Ltd.',
 		false,
-		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
+		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), KBANK API, PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
 		'-'
 	)
 ];
