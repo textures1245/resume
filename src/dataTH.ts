@@ -148,7 +148,19 @@ const sideProjects = [
 		'ใช้ Svelte แบบ SPA ในการพัฒนาร่วมกับ Typescript การจัดรูปแบบด้วย CSS และ TailwindCSS. เชื่อมต่อกับตัวเซิร์ฟเวอร์ไซต์ด้วย Firebase (Authentication) และ Firestore (สำหรับจัดการฐานข้อมูล) และ Node.js ผ่าน ExpressJS. (สำหรับ Private Restful APIs) และ Cloundinary สำหรับจัดการ Media Storage',
 		false,
 		'TypeScript (Svelte-SPA), CSS, TailwindCSS, Firebase, Node.js (ExpressJS), Cloundinary',
+		["https://github.com/textures1245/csmju-comcamp-22nd-promote"],
 		'https://comcamp.csmju.com'
+	),
+	new Project(
+		'Point Of Sale System',
+		'โปรเจควิจัยและพัฒนาที่ผมและทีมทำขึ้นเป็นไซด์โปรเจค (side project) เพื่อศึกษาวิธีการทำงานของระบบ Point of Sale (POS) โดยได้ทำการศึกษาอุตสาหกรรมธุรกิจและออกแบบเพื่อให้รองรับแพลตฟอร์ม E-commerce โดยครอบคลุมหน่วยงานย่อยหลายด้าน เช่น การจัดการบัญชีผู้ใช้ (roles, permission เป็นต้น), การจัดการสินค้า, การประมวลผลคำสั่งซื้อ และอื่น ๆ',
+		'SvelteKit ทำงานในรูปแบบ SSR (JS Notation) โดยมี Backend ใช้ Go ร่วมกับ Fiber framework, ฐานข้อมูลเป็น MySQL, ใช้ Docker สำหรับ containerization, และ Prisma สำหรับการออกแบบสคีมา',
+		false,
+		'Go (Fiber), MySQL, Docker, Prisma, JS Notation, CSS, Bootstrap',
+		[
+			'https://github.com/textures1245/pos_alpha_frontend',
+			'https://github.com/textures1245/pos_alpha_backend'
+		],
 	),
 	new Project(
 		'Homework Management',
@@ -156,7 +168,7 @@ const sideProjects = [
 		'TypeScript ผ่าน Angular เป็นกรอบการทำงานด้านหน้าและ NgRx สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย CSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Node.js ผ่าน ExpressJS. MySQL สำหรับฐานข้อมูล.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL',
-		'https://github.com/textures1245/homework-management'
+		['https://github.com/textures1245/homework-management'],
 	),
 	new Project(
 		'Booking Best',
@@ -164,7 +176,7 @@ const sideProjects = [
 		'TypeScript ผ่าน VueJS สำหรับกรอบการทำงานด้านหน้าและ Pinia สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย SCSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Firebase.',
 		false,
 		'TypeScript (VueJS, Pinia), SCSS, TailwindCSS, Firebase',
-		'https://github.com/textures1245/BookingBest-HotelApplication',
+		['https://github.com/textures1245/BookingBest-HotelApplication'],
 		'https://booking-best-hotel-application.vercel.app'
 	),
 	new Project(
@@ -173,7 +185,7 @@ const sideProjects = [
 		'TypeScript ผ่าน VueJS สำหรับกรอบการทำงานด้านหน้าและ Zod สำหรับการตรวจสอบประเภท การจัดรูปแบบด้วย SCSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Firebase.',
 		false,
 		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase',
-		'https://github.com/textures1245/blocktify-template-webshop-builder'
+		['https://github.com/textures1245/blocktify-template-webshop-builder']
 	),
 	new Project(
 		'PhakhCampground',
@@ -181,7 +193,7 @@ const sideProjects = [
 		'โปรเจ็คแรกของกระผม ใช้ EJS ธรรมดาสำหรับเทมเพลต HTML, การจัดรูปแบบด้วย CSS และ Bootstrap. Node.js ผ่าน ExpressJS สำหรับการเชื่อมต่อกับเซิร์ฟเวอร์, MongoDB สำหรับฐานข้อมูล และ Clondinary สำหรับเก็บไฟล์ประมัลติมีเดีย',
 		false,
 		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB',
-		'https://github.com/textures1245/PhakhCampgrounds'
+		['https://github.com/textures1245/PhakhCampgrounds']
 	),
 	new Project(
 		'Wishlist Management',
@@ -189,7 +201,7 @@ const sideProjects = [
 		'TypeScript ผ่าน Angular สำหรับกรอบการทำงานด้านหน้าและ NgRx สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย CSS และ TailwindCSS. ใช้ฐานข้อมูลแบบเรียลไทม์จาก Firebase.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase ฐานข้อมูลแบบเรียลไทม์',
-		'https://github.com/textures1245/wishlist-app',
+		['https://github.com/textures1245/wishlist-app'],
 		'https://wishlist-management-app.web.app'
 	),
 	new Project(
@@ -198,7 +210,7 @@ const sideProjects = [
 		'SCSS',
 		false,
 		'SCSS',
-		'https://github.com/textures1245/portfolio-static-website',
+		['https://github.com/textures1245/portfolio-static-website'],
 		'https://portfolio-static-website.vercel.app'
 	)
 ];

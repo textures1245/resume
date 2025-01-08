@@ -58,15 +58,18 @@ const technologies = [
 	},
 	{
 		section: 'Frameworks',
-		details: 'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native net/http) .'
+		details:
+			'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native net/http) .'
 	},
 	{
 		section: 'Tools',
-		details: 'Git, Docker-Compose, Zsh, Bash, SSH, GitHub Codespace, Prisma, MySQL, MongoDB, SQLServer, Figma.'
+		details:
+			'Git, Docker-Compose, Zsh, Bash, SSH, GitHub Codespace, Prisma, MySQL, MongoDB, SQLServer, Figma.'
 	},
 	{
 		section: 'Other',
-		details: 'Nginx, Firebase, Gitlab CI/CD, Jenkins, Vercel, Netlify, Heroku, Cloudinary, Google Cloud'
+		details:
+			'Nginx, Firebase, Gitlab CI/CD, Jenkins, Vercel, Netlify, Heroku, Cloudinary, Google Cloud'
 	}
 ];
 
@@ -144,7 +147,16 @@ const sideProjects = [
 		'The project utilizes Single Page Application (SPA) approach with Svelte, coupled with TypeScript for development. Styling is achieved using CSS and TailwindCSS. It connects to the server-side using Firebase (for Authentication) and Firestore (for database management), and Node.js via ExpressJS (for private Restful APIs). Cloudinary is used for media storage management.',
 		false,
 		'TypeScript (Svelte-SPA), CSS, TailwindCSS, Firebase, Node.js (ExpressJS), Cloudinary',
+		["https://github.com/textures1245/csmju-comcamp-22nd-promote"],
 		'https://comcamp.csmju.com'
+	),
+	new Project(
+		'Point Of Sale System',
+		'The research and development project I and teammates worked as a side project to investigated how Point of Sale (POS) system work. By researched business industry and designed for e-commerce platforms. It covers various units such as account management (roles, permission etc.), product management, order processing, and more.',
+	    "SvelteKit as SSR (JS Notation). Backend using Go with Fiber framework, MySQL for database, Docker for containerization, and Prisma for schema design.",
+		false,
+		'Go (Fiber), MySQL, Docker, Prisma, JS Notation, CSS, Bootstrap',
+		['https://github.com/textures1245/pos_alpha_frontend', 'https://github.com/textures1245/pos_alpha_backend'],
 	),
 	new Project(
 		'Homework Management',
@@ -152,7 +164,7 @@ const sideProjects = [
 		'TypeScript via Angular for frontend framework and NgRx for state management, styling with CSS and TailwindCSS. Backend connecting with Node.js via ExpressJS. MySQL for database.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL',
-		'https://github.com/textures1245/homework-management'
+		['https://github.com/textures1245/homework-management']
 	),
 	new Project(
 		'Booking Best',
@@ -160,7 +172,7 @@ const sideProjects = [
 		'TypeScript via VueJS for frontend framework and Pinia for state management, styling with SCSS and TailwindCSS. Using Firebase backend connection.',
 		false,
 		'TypeScript (VueJS, Pinia), SCSS, TailwindCSS, Firebase',
-		'https://github.com/textures1245/BookingBest-HotelApplication',
+		['https://github.com/textures1245/BookingBest-HotelApplication'],
 		'https://booking-best-hotel-application.vercel.app'
 	),
 	new Project(
@@ -169,7 +181,7 @@ const sideProjects = [
 		'TypeScript via VueJS for frontend framework and Zod for type validation styling with SCSS and TailwindCSS. Firebase backend connection.',
 		false,
 		'TypeScript (VueJS, Zod), SCSS, TailwindCSS, Firebase',
-		'https://github.com/textures1245/blocktify-template-webshop-builder'
+		['https://github.com/textures1245/blocktify-template-webshop-builder']
 	),
 	new Project(
 		'PhakhCampground',
@@ -177,7 +189,7 @@ const sideProjects = [
 		'My first project, using plain EJS for HTML template, styling with CSS and Bootstrap. Node.js via ExpressJS for backend connection, MongoDB for database.',
 		false,
 		'EJS, CSS, Bootstrap, Node.js (ExpressJS), MongoDB',
-		'https://github.com/textures1245/PhakhCampgrounds'
+		['https://github.com/textures1245/PhakhCampgrounds']
 	),
 	new Project(
 		'Wishlist Management',
@@ -185,7 +197,7 @@ const sideProjects = [
 		'TypeScript via Angular for frontend framework and NgRx for state management, styling with CSS and TailwindCSS. Using Firebase real-time database.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Firebase Realtime Database',
-		'https://github.com/textures1245/wishlist-app',
+		['https://github.com/textures1245/wishlist-app'],
 		'https://wishlist-management-app.web.app'
 	),
 	new Project(
@@ -194,7 +206,7 @@ const sideProjects = [
 		'SCSS',
 		false,
 		'SCSS',
-		'https://github.com/textures1245/portfolio-static-website',
+		['https://github.com/textures1245/portfolio-static-website'],
 		'https://portfolio-static-website.vercel.app'
 	)
 ];
