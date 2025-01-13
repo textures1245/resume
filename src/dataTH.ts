@@ -152,6 +152,17 @@ const sideProjects = [
 		'https://comcamp.csmju.com'
 	),
 	new Project(
+		'Blog Duaaeeg',
+		'แอปพลิเคชัน Blog Duaaeeg พัฒนาตาม SDLC, Clean Architecture, และหลักการ SOLID โดยได้รับแรงบันดาลใจจากผู้นำในอุตสาหกรรมเช่น Medium โปรเจคนี้แสดงให้เห็นถึงความสามารถของผมในการเข้าใจความต้องการทางธุรกิจ วิเคราะห์ระบบ และนำเสนอวิธีแก้ปัญหาแบบ full-stack ที่มีประสิทธิภาพ ตั้งแต่การออกแบบ frontend ไปจนถึงการรวม backend',
+		'โปรเจคนี้ใช้ Go กับ Gin framework สำหรับ backend, PostgreSQL สำหรับฐานข้อมูล, และ Prisma ORM สำหรับการออกแบบ schema มีการใช้ JWT authentication เพื่อความปลอดภัยของผู้ใช้ และ Docker สำหรับ containerization ส่วน frontend พัฒนาด้วย SvelteKit, TypeScript, CSS, และ TailwindCSS โดยใช้ Axios สำหรับการสื่อสารกับ API',
+		false,
+		'Tech-Stacks: Go (Gin), PostgreSQL, Prisma ORM, JWT Auth, Docker, Nginx, Supabase, SvelteKit, TypeScript, CSS, TailwindCSS, Axios',
+		[
+			"https://github.com/textures1245/blog-duaaeeg-application",
+			"https://github.com/textures1245/blog-duaaeeg-rest-api-service"
+		],
+	),
+	new Project(
 		'Point Of Sale System',
 		'โปรเจควิจัยและพัฒนาที่ผมและทีมทำขึ้นเป็นไซด์โปรเจค (side project) เพื่อศึกษาวิธีการทำงานของระบบ Point of Sale (POS) โดยได้ทำการศึกษาอุตสาหกรรมธุรกิจและออกแบบเพื่อให้รองรับแพลตฟอร์ม E-commerce โดยครอบคลุมหน่วยงานย่อยหลายด้าน เช่น การจัดการบัญชีผู้ใช้ (roles, permission เป็นต้น), การจัดการสินค้า, การประมวลผลคำสั่งซื้อ และอื่น ๆ',
 		'SvelteKit ทำงานในรูปแบบ SSR (JS Notation) โดยมี Backend ใช้ Go ร่วมกับ Fiber framework, ฐานข้อมูลเป็น MySQL, ใช้ Docker สำหรับ containerization, และ Prisma สำหรับการออกแบบสคีมา',
