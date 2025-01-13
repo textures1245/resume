@@ -137,7 +137,7 @@ const workProject = [
 		'Pay Solutions, Ltd.',
 		false,
 		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), KBANK API, PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
-		'-'
+		'https://github.com/textures1245/ocr-slip-to-text'
 	)
 ];
 

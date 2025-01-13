@@ -12,14 +12,15 @@
 			<div class="">
 				<ul class="list-disc list-inside">
 					<li>
-						<a
+						
+						<span class="font-extrabold ">{p.name}, {p.company}</span>
+						<p>{p.details} <a
 							class:print-only={!p.url}
 							rel="noreferrer"
 							target="_blank"
 							href={p.url ?? p.sourceCode}>{p.url?.slice(8) ?? p.sourceCode.slice(8)}</a
-						>
-						<span class="font-extrabold ">{p.name}, {p.company}</span>
-						<p>{p.details}</p>
+						></p>
+						
 						<hr class="print:hidden my-2" />
 
 						<ul class="print:hidden block list-inside text-slate-600  list-disc">
