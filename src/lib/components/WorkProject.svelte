@@ -12,18 +12,21 @@
 			<div class="">
 				<ul class="list-disc list-inside">
 					<li>
-						
-						<span class="font-extrabold ">{p.name}, {p.company}</span>
-						<p>{p.details} <a
-							class:print-only={!p.url}
-							rel="noreferrer"
-							target="_blank"
-							href={p.url ?? p.sourceCode}>{p.url?.slice(8) ?? p.sourceCode.slice(8)}</a
-						></p>
-						
+						<span class="font-extrabold">{p.name}, {p.company}</span>
+						<p>
+							{p.details}
+							<a
+								class:print-only={!p.url}
+								rel="noreferrer"
+								target="_blank"
+								href={p.url ?? p.sourceCode}
+								>{p.url?.slice(8) ?? (p.sourceCode ? p.sourceCode?.slice(8) : '')}</a
+							>
+						</p>
+
 						<hr class="print:hidden my-2" />
 
-						<ul class="print:hidden block list-inside text-slate-600  list-disc">
+						<ul class="print:hidden block list-inside text-slate-600 list-disc">
 							<p class="">
 								<span class=" font-bolder">
 									{$langSelected === 'ENG' ? 'Procedure' : 'ขั้นตอน'}
@@ -31,7 +34,7 @@
 
 								{#each data as item}
 									{#each item.subProcedure as p}
-										<li class="list-none  font-bold">{p.name}</li>
+										<li class="list-none font-bold">{p.name}</li>
 										<li>{p.details}</li>
 									{/each}
 								{/each}

@@ -31,15 +31,15 @@
 	>
 	<a
 		class="web-only"
-		href="https://portfolio-static-website.vercel.app"
+		href="https://phakh-portfolio.vercel.app"
 		target="_blank"
 		rel="noreferrer">portfolio/textures1245</a
 	>
 	<a
 		class="print-only"
-		href="https://portfolio-static-website.vercel.app"
+		href="https://phakh-portfolio.vercel.app"
 		target="_blank"
-		rel="noreferrer">portfolio-static-website.vercel.app</a
+		rel="noreferrer">phakh-portfolio.vercel.app</a
 	>
 </div>
 

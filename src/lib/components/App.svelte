@@ -19,7 +19,7 @@
 
 	let data = dataEN;
 
-	let lastedUpdated = new Date('2025-01-06').toLocaleDateString();
+	let lastedUpdated = new Date('2025-02-27').toLocaleDateString();
 
 	langSelected.subscribe((lang) => {
 		data = lang === 'ENG' ? dataEN : dataTH;
