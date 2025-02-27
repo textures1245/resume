@@ -21,7 +21,7 @@ const aboutMe = {
 		url: 'https://www.linkedin.com/in/traiphakh-sittikaew-b32ba8290/'
 	},
 	location: 'เชียงใหม่, ประเทศไทย',
-	website: 'https://resume-gamma-topaz.vercel.app'
+	website: 'https://phakh-resume.vercel.app'
 };
 
 const objective =
@@ -62,6 +62,11 @@ const technologies = [
 		section: 'Frameworks',
 		details:
 			'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native net/http) .'
+	},
+	{
+		section: 'Design/Architectures',
+		details:
+			'SDLC, SOLID, Clean Arch, Hexagonal Arch, Monolith (MVC), Microservices (DDD, Event-Driven, CQRS, Event-Sourcing, 3-Tier Arch), RESTful API, Serverless, SPA, SSR'
 	},
 	{
 		section: 'Tools',
@@ -110,8 +115,7 @@ const workProject = [
 		[
 			{
 				name: 'การรวบรวมความต้องการและการวางแผนโครงการ',
-				details:
-					'ร่วมมือกับ Project Manager เพื่อกำหนดความต้องการทางธุรกิจและวัตถุประสงค์'
+				details: 'ร่วมมือกับ Project Manager เพื่อกำหนดความต้องการทางธุรกิจและวัตถุประสงค์'
 			},
 			{
 				name: 'การออกแบบสถาปัตยกรรมและฐานข้อมูล',
@@ -137,7 +141,6 @@ const workProject = [
 		'Pay Solutions, Ltd.',
 		false,
 		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), KBANK API, PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
-		'https://github.com/textures1245/ocr-slip-to-text'
 	)
 ];
 
@@ -148,7 +151,7 @@ const sideProjects = [
 		'ใช้ Svelte แบบ SPA ในการพัฒนาร่วมกับ Typescript การจัดรูปแบบด้วย CSS และ TailwindCSS. เชื่อมต่อกับตัวเซิร์ฟเวอร์ไซต์ด้วย Firebase (Authentication) และ Firestore (สำหรับจัดการฐานข้อมูล) และ Node.js ผ่าน ExpressJS. (สำหรับ Private Restful APIs) และ Cloundinary สำหรับจัดการ Media Storage',
 		false,
 		'TypeScript (Svelte-SPA), CSS, TailwindCSS, Firebase, Node.js (ExpressJS), Cloundinary',
-		["https://github.com/textures1245/csmju-comcamp-22nd-promote"],
+		['https://github.com/textures1245/csmju-comcamp-22nd-promote'],
 		'https://comcamp.csmju.com'
 	),
 	new Project(
@@ -158,9 +161,9 @@ const sideProjects = [
 		false,
 		'Tech-Stacks: Go (Gin), PostgreSQL, Prisma ORM, JWT Auth, Docker, Nginx, Supabase, SvelteKit, TypeScript, CSS, TailwindCSS, Axios',
 		[
-			"https://github.com/textures1245/blog-duaaeeg-application",
-			"https://github.com/textures1245/blog-duaaeeg-rest-api-service"
-		],
+			'https://github.com/textures1245/blog-duaaeeg-application',
+			'https://github.com/textures1245/blog-duaaeeg-rest-api-service'
+		]
 	),
 	new Project(
 		'Point Of Sale System',
@@ -171,7 +174,7 @@ const sideProjects = [
 		[
 			'https://github.com/textures1245/pos_alpha_frontend',
 			'https://github.com/textures1245/pos_alpha_backend'
-		],
+		]
 	),
 	new Project(
 		'Homework Management',
@@ -179,7 +182,7 @@ const sideProjects = [
 		'TypeScript ผ่าน Angular เป็นกรอบการทำงานด้านหน้าและ NgRx สำหรับการจัดการสถานะ, การจัดรูปแบบด้วย CSS และ TailwindCSS. การเชื่อมต่อกับเซิร์ฟเวอร์ด้วย Node.js ผ่าน ExpressJS. MySQL สำหรับฐานข้อมูล.',
 		false,
 		'TypeScript (Angular, NgRx), CSS, TailwindCSS, Node.js (ExpressJS), MySQL',
-		['https://github.com/textures1245/homework-management'],
+		['https://github.com/textures1245/homework-management']
 	),
 	new Project(
 		'Booking Best',

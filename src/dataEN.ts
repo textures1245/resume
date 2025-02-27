@@ -22,14 +22,14 @@ const aboutMe: AboutMe = {
 		url: 'https://www.linkedin.com/in/traiphakh-sittikaew-b32ba8290/'
 	},
 	location: 'Chiang Mai, Thailand',
-	website: 'https://resume-gamma-topaz.vercel.app'
+	website: 'https://phakh-resume.vercel.app'
 };
 
 const objective =
 	'My name is Traiphakh Sittikaew, a 4th year student in Computer Science. Maejo University is preparing to conduct cooperative education in software development. This is a good opportunity to apply programming skills and apply the various tools learned to real work. I am excited and ready to be a part of developing various projects with the organization. and develop yourself until you step into being a full-fledged software developer in the future';
 
 const summary =
-	"I have a passion for web development and basic technical skills. and are proficient in using programming languages and tools Including covering technical design patterns such as OOP and MVC and having the ability to work well as a team. Because I believe in clarity of goals and objectives. Therefore, I always give advice and summarize the operations of the group. And I respect team members' reasons and they are an important force in communication. I am also a mentor and teaching assistant for many juniors and am responsible for the TA (Team Assistant) role in the CompCamp project. I am committed to using my knowledge in real projects to gain experience and contribute. Participate in the full development of the organization.";
+	"I have a passion for web development and basic technical skills. and I am proficient in using programming languages and tools, including covering technical design patterns such as OOP and MVC. I also have the ability to work well as a team. Because I believe in clarity of goals and objectives, I always give advice and summarize the operations of the group. I respect team members' reasons and they are an important force in communication. I am also a mentor and teaching assistant for many juniors and am responsible for the TA (Team Assistant) role in the CompCamp project. I am committed to using my knowledge in real projects to gain experience and contribute to the full development of the organization.";
 const certificates = [
 	new Certificate(
 		'Udemy: The Complete 2020 Web Development Bootcamp.',
@@ -60,6 +60,11 @@ const technologies = [
 		section: 'Frameworks',
 		details:
 			'Angular, VueTS, Nuxt, Svelte, SvelteKit, TailwindCSS, Bootstrap, ExpressTS, Go web frameworks (Fiber, Gin, Gorilla Mux etc. or just native net/http) .'
+	},
+	{
+		section: 'Design/Architectures',
+		details:
+			'SDLC, SOLID, Clean Arch, Hexagonal Arch, Monolith (MVC), Microservices (DDD, Event-Driven, CQRS, Event-Sourcing, 3-Tier Arch), RESTful API, Serverless, SPA, SSR'
 	},
 	{
 		section: 'Tools',
@@ -135,19 +140,18 @@ const workProject = [
 		],
 		'Pay Solutions, Ltd.',
 		false,
-		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), KBANK API, PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)',
-		'https://github.com/textures1245/ocr-slip-to-text'
+		'Go (Gorilla Mux), LINE-Bot-SDK, Log (Logrus), KBANK API, PostgreSQL, DevOps (Docker Compose, Gitlab CI/CD), Monitor (Sentry & Portainer)'
 	)
 ];
 
 const sideProjects = [
 	new Project(
 		'Comcamp CSMJU',
-		'Comcamp CSMJU is an annual youth computer camp organized by the Computer Science Department of Maejo University. It is designed to promote high school students familiarity with computer science and programming. The project includes a Landing Page for promotion and a web application that supports registration and data management of camp applicants.',
+		"Comcamp CSMJU is an annual youth computer camp by Maejo University's CS Department that introduces high school students to computer science. The project includes a promotional Landing Page and a web application for camp registration and applicant data management.",
 		'The project utilizes Single Page Application (SPA) approach with Svelte, coupled with TypeScript for development. Styling is achieved using CSS and TailwindCSS. It connects to the server-side using Firebase (for Authentication) and Firestore (for database management), and Node.js via ExpressJS (for private Restful APIs). Cloudinary is used for media storage management.',
 		false,
 		'TypeScript (Svelte-SPA), CSS, TailwindCSS, Firebase, Node.js (ExpressJS), Cloudinary',
-		["https://github.com/textures1245/csmju-comcamp-22nd-promote"],
+		['https://github.com/textures1245/csmju-comcamp-22nd-promote'],
 		'https://comcamp.csmju.com'
 	),
 	new Project(
@@ -156,15 +160,21 @@ const sideProjects = [
 		'The project uses Go with Gin framework for the backend, PostgreSQL for the database, and Prisma ORM for schema design. JWT authentication is implemented for user security, and Docker is used for containerization. The frontend is built with SvelteKit, TypeScript, CSS, and TailwindCSS, with Axios for API communication.',
 		false,
 		'Tech-Stacks: Go (Gin), PostgreSQL, Prisma ORM, JWT Auth, Docker, Nginx, Supabase SvelteKit, TypeScript, CSS, TailwindCSS, Axios',
-		["https://github.com/textures1245/blog-duaaeeg-application", "https://github.com/textures1245/blog-duaaeeg-rest-api-service"],
+		[
+			'https://github.com/textures1245/blog-duaaeeg-application',
+			'https://github.com/textures1245/blog-duaaeeg-rest-api-service'
+		]
 	),
 	new Project(
 		'Point Of Sale System',
 		'The research and development project I and teammates worked as a side project to investigated how Point of Sale (POS) system work. By researched business industry and designed for e-commerce platforms. It covers various units such as account management (roles, permission etc.), product management, order processing, and more.',
-	    "SvelteKit as SSR (JS Notation). Backend using Go with Fiber framework, MySQL for database, Docker for containerization, and Prisma for schema design.",
+		'SvelteKit as SSR (JS Notation). Backend using Go with Fiber framework, MySQL for database, Docker for containerization, and Prisma for schema design.',
 		false,
 		'Go (Fiber), MySQL, Docker, Prisma, JS Notation, CSS, Bootstrap',
-		['https://github.com/textures1245/pos_alpha_frontend', 'https://github.com/textures1245/pos_alpha_backend'],
+		[
+			'https://github.com/textures1245/pos_alpha_frontend',
+			'https://github.com/textures1245/pos_alpha_backend'
+		]
 	),
 	new Project(
 		'Homework Management',

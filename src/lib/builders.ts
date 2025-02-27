@@ -20,7 +20,7 @@ class WorkProject {
 		public company: string,
 		public onHide: false,
 		public techStack: string,
-		public sourceCode: string,
+		public sourceCode?: string,
 		public url?: string
 	) {}
 }
